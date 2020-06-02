@@ -470,7 +470,7 @@ namespace CYKP
 
         void OpenForm()
         {
-            var log = new LogForm(GridInfoOrders.Rows[1].Cells[0].Value.ToString());           
+            var log = new LogForm(GridInfoOrders.Rows[1].Cells[0].Value.ToString());
             log.ShowDialog();
         }
     }

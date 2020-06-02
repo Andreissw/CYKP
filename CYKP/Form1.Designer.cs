@@ -280,9 +280,9 @@
             this.GRAddClient.Controls.Add(this.ADDShrtName);
             this.GRAddClient.Controls.Add(this.label9);
             this.GRAddClient.Controls.Add(this.ADDFullName);
-            this.GRAddClient.Location = new System.Drawing.Point(713, 853);
+            this.GRAddClient.Location = new System.Drawing.Point(826, 453);
             this.GRAddClient.Name = "GRAddClient";
-            this.GRAddClient.Size = new System.Drawing.Size(682, 292);
+            this.GRAddClient.Size = new System.Drawing.Size(682, 284);
             this.GRAddClient.TabIndex = 6;
             this.GRAddClient.TabStop = false;
             this.GRAddClient.Text = "ФормаЗаказчика";
