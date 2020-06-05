@@ -36,7 +36,7 @@
             // GridLog
             // 
             this.GridLog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GridLog.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GridLog.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.GridLog.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GridLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridLog.Location = new System.Drawing.Point(3, 12);
@@ -62,7 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1006, 653);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.GridLog);

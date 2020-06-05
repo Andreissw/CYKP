@@ -398,9 +398,8 @@ namespace CYKP.Код
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Log.Id).Select(c => c.H_CYKP_Name_Client.Contract_Num).FirstOrDefault()); //номер контракта
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Log.Id).Select(c => c.H_CYKP_StatusProduct.Name).FirstOrDefault()); //Имя статуса
 
-                addDate(1);
-                addDate(2);
-                addDate(3);
+                for (int i = 1; i < 4; i++)
+                    addDate(i);      
 
                 void addDate(int idtypedate)
                 {

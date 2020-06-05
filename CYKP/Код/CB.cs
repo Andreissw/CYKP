@@ -52,7 +52,7 @@ namespace CYKP.Код
        //     GB.Location = new Point(X, Y); //Позиция группбокса
        // }
 
-        public void GRGet( int x, int y)
+        public void GRGet( int x, int y) //Получение интерфейса
         {
             Clear(groupbox);
             groupbox.Visible = true;
@@ -79,7 +79,7 @@ namespace CYKP.Код
             }
         }
 
-        public void CloseCombo(Control parent, string name = "")
+        public void CloseCombo(Control parent, string name = "") // Обновление форм и очистка элементов управлений
         {
             foreach (Control item in parent.Controls)
             {     

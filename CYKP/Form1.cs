@@ -23,6 +23,7 @@ namespace CYKP
         }
 
         static public int MenuId;
+        //string FromClient = new string[7] { "ADDFullName","" };
         private void Form1_Load(object sender, EventArgs e)
         {          
             GridInfoClients.Rows.Add(6);
@@ -41,9 +42,7 @@ namespace CYKP
             {
                 Login.Clear(TBLogin);
                 return;
-
             } 
-
             else
             {
                 Userid = Login.UserID;
@@ -59,54 +58,50 @@ namespace CYKP
         //    CB.Add(ADDStatusModule);
         //}
 
-        void ListComboBoxOrder(List<ComboBox> CB) //Добавление в массив компобоксы КЛИЕНТЫ/ЗАКАЗЧИКИ/МОДУЛИ
-        {
+        //void ListComboBoxOrder(List<ComboBox> CB) //Добавление в массив компобоксы КЛИЕНТЫ/ЗАКАЗЧИКИ/МОДУЛИ
+        //{
 
-            CB.Add(ADDCBClentInModule);
-            CB.Add(ADDCBOrderinModule);
-            CB.Add(ADDCBClientInOrder);
-            CB.Add(CBSearchClient);
+        //    CB.Add(ADDCBClentInModule);
+        //    CB.Add(ADDCBOrderinModule);
+        //    CB.Add(ADDCBClientInOrder);
+        //    CB.Add(CBSearchClient);
            
-        }
+        //}
         
-        void ListGroupBox(List<GroupBox> GR) //Добавление в массив группбоксы - МЕНЮ
-        {            
-            GR.AddRange(this.Controls.OfType<GroupBox>());
-        }
+        //void ListGroupBox(List<GroupBox> GR) //Добавление в массив группбоксы - МЕНЮ
+        //{            
+        //    GR.AddRange(this.Controls.OfType<GroupBox>());
+        //}
 
         int idClient;            
         private void GRIDListClient_CellClick(object sender, DataGridViewCellEventArgs e) //Меню редактирование проектов
         {
-            if (e.RowIndex == -1)
-                return;
-            
+            if (e.RowIndex == -1) // Защита нажатие шапки
+                return;            
 
             var CB = new CB();
             var QR = CB;
             IComboItemid IComb = QR;
-
             QR.NameClient = GRIDListClient.CurrentCell.Value.ToString();
 
             idClient = QR.FindCleintID(); // Поиск ID номера клиента
-            var list = QR.GetInfoClient();
-            if (list.Count == 0)
+            var list = QR.GetInfoClient(); //Добавление в массив инфо о текущем клиенте
+
+            if (list.Count == 0) //Защита, если инфо нет, код обрывается
                 return;
 
-
-            QR.groupbox = GRAddClient;
+            QR.groupbox = GRAddClient; //инициализирует физический группбокс в классе
 
             QR.CloseCombo(this, "EdditingGB");
-            QR.GRGet(411, 510);// опредление интерфейса добавление/Изменение заказчика
+            QR.GRGet(411, 510);// //Получение интерфейса                                
 
-            //ADDFullName.Text = list[0];
-            //ADDShrtName.Text = list[1];
-            //ADDNumberContract.Text = list[2];
-            //ADDStatusContract.Text = list[3];
-            //ADDDateStart.Value = Convert.ToDateTime(list[4]);
-            //ADDDateContract.Value = Convert.ToDateTime(list[5]);
-            //ADDDateContractEnd.Value = Convert.ToDateTime(list[6]);
-
-
+            ADDFullName.Text = list[0];
+            ADDShrtName.Text = list[1];
+            ADDNumberContract.Text = list[2];
+            ADDStatusContract.Text = list[3];
+            ADDDateStart.Value = Convert.ToDateTime(list[4]);
+            ADDDateContract.Value = Convert.ToDateTime(list[5]);
+            ADDDateContractEnd.Value = Convert.ToDateTime(list[6]);
 
             IComb.ComboBoxItemOrder(CBSearchOrder); //Добавляет список заказов в компобокс
             GRinEdditingOrder.Visible = true;
@@ -211,17 +206,14 @@ namespace CYKP
                 case 3:
                     break;
             }
-        }
-
-       
+        }      
 
 
         private void BTback_Click_1(object sender, EventArgs e) //Кнопка назать, выход в самое начальное меню
         {
-            //var grid = new Grid();
+        
 
-        }
-               
+        }              
     
         
         public void CloseBT() //Метод Закрытие - интерфейс в меню настроек
@@ -231,23 +223,7 @@ namespace CYKP
             CB.CloseCombo(EdditingGB);
 
         }
-
-        private void button4_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказчика)
-        {
-            CloseBT();
-        }
-
-        private void button5_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказа)
-        {
-            CloseBT();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
-
-        {
-            CloseBT();
-        }       
-       
+     
 
         private void button3_Click(object sender, EventArgs e) //Выбор заказчика - Меню редактирование
         {
@@ -257,10 +233,8 @@ namespace CYKP
 
             var Qu = new QUERY();
             var CB = new CB();
-
             CB.CloseCombo(this, "EdditingGB"); //Скрывает и чистит все gropbox кроме одного 
             CB.CloseCombo(EdditingGB);
-
             Qu.ListClients(GRIDListClient, CBSearchClient.Text);// вывод клиентов
 
         }
@@ -271,11 +245,9 @@ namespace CYKP
                 return;
            
             var CB = new CB();
-
             CB.idClient = idClient;
             CB.CloseCombo(this, "EdditingGB"); //Скрывает и чистит все gropbox кроме одного 
             CB.CloseCombo(EdditingGB, "GRinEdditingOrder"); //Внутри groupboxa чистит все кроме одного группбокса
-
             CB.ListOrder(GRIDListOrder, CBSearchOrder.Text);
             
         }
@@ -294,28 +266,35 @@ namespace CYKP
         }
 
         private void AddClient_Click(object sender, EventArgs e)
-        {
-            var qu = new QUERY();
+        {      
+            var GR = new GroupBoxcs();//Проверка на заполнение полей
+            if (GR.CheckControls(GRAddClient) == 0)
+                return;
 
+            var qu = new QUERY();
             switch (rowIndex)
             {
-                case 3:
+                case 3:// Редактирование
                     qu.UserID = Userid;
                     qu.NameClient = GRIDListClient.CurrentCell.Value.ToString();
                     qu.FindCleintID();
                     qu.updateClient(GRAddClient);
                     break;
 
-                default:
-                    
+                default:// Добавление
+
                     qu.UserID = Userid;
                     qu.addClient(GRAddClient); //функция Добавление в таблицу клиентов и таблицу LOG
                     break;
             }
-         
+
         }
         private void AddOrder_Click(object sender, EventArgs e)
         {
+            var GR = new GroupBoxcs(); //Проверка на заполнение полей
+            if (GR.CheckControls(GRAddOrder) == 0)
+                return;
+
             var qu = new QUERY();
 
             switch (rowIndex)
@@ -341,6 +320,10 @@ namespace CYKP
 
         private void AddBTModule_Click(object sender, EventArgs e)
         {
+            var GR = new GroupBoxcs();//Проверка на заполнение полей
+            if (GR.CheckControls(AddModule) == 0)
+                return;
+
             var qu = new QUERY();
             switch (rowIndex)
             {
@@ -463,6 +446,11 @@ namespace CYKP
             Grid.INFO(this);
         }
 
+        private void INFBTLogModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void INFBTLogorder_Click(object sender, EventArgs e)
         {
             OpenForm();
@@ -473,5 +461,16 @@ namespace CYKP
             var log = new LogForm(GridInfoOrders.Rows[1].Cells[0].Value.ToString());
             log.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказчика)
+        {CloseBT(); }
+
+        private void button5_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказа)
+        {CloseBT(); }
+
+        private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
+        {CloseBT(); }
+
+       
     }
 }

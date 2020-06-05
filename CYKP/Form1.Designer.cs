@@ -48,35 +48,35 @@
             this.BTback = new System.Windows.Forms.Button();
             this.LBName = new System.Windows.Forms.Label();
             this.GRAddClient = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.AddClient = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ADDDateContract = new System.Windows.Forms.DateTimePicker();
-            this.ADDStatusContract = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.ADDDateContractEnd = new System.Windows.Forms.DateTimePicker();
-            this.ADDDateStart = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.ADDNumberContract = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ADDStatusContract = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.ADDShrtName = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.ADDDateContractEnd = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ADDDateContract = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.AddClient = new System.Windows.Forms.Button();
             this.ADDFullName = new System.Windows.Forms.TextBox();
+            this.ADDDateStart = new System.Windows.Forms.DateTimePicker();
             this.GRAddOrder = new System.Windows.Forms.GroupBox();
             this.ADDprjStatus = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ADDCBClientInOrder = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.ADDDateProject = new System.Windows.Forms.DateTimePicker();
             this.AddOrder = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.ADDTBNameProject = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.ADDTBОбъемЗаказа = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.ADDCBClientInOrder = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ADDDateProject = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.ADDTBОбъемЗаказа = new System.Windows.Forms.TextBox();
+            this.ADDTBNameProject = new System.Windows.Forms.TextBox();
             this.AddModule = new System.Windows.Forms.GroupBox();
             this.ADDStatusModule = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -116,7 +116,7 @@
             this.GridInfoModules = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label37 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.INFBTLogModule = new System.Windows.Forms.Button();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -264,23 +264,23 @@
             // GRAddClient
             // 
             this.GRAddClient.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.GRAddClient.Controls.Add(this.label6);
-            this.GRAddClient.Controls.Add(this.label7);
-            this.GRAddClient.Controls.Add(this.label12);
-            this.GRAddClient.Controls.Add(this.button4);
-            this.GRAddClient.Controls.Add(this.AddClient);
-            this.GRAddClient.Controls.Add(this.label10);
-            this.GRAddClient.Controls.Add(this.ADDDateContract);
-            this.GRAddClient.Controls.Add(this.ADDStatusContract);
-            this.GRAddClient.Controls.Add(this.label11);
-            this.GRAddClient.Controls.Add(this.ADDDateContractEnd);
-            this.GRAddClient.Controls.Add(this.ADDDateStart);
-            this.GRAddClient.Controls.Add(this.label8);
             this.GRAddClient.Controls.Add(this.ADDNumberContract);
+            this.GRAddClient.Controls.Add(this.label6);
+            this.GRAddClient.Controls.Add(this.label8);
+            this.GRAddClient.Controls.Add(this.ADDStatusContract);
+            this.GRAddClient.Controls.Add(this.label7);
             this.GRAddClient.Controls.Add(this.ADDShrtName);
+            this.GRAddClient.Controls.Add(this.button4);
             this.GRAddClient.Controls.Add(this.label9);
+            this.GRAddClient.Controls.Add(this.ADDDateContractEnd);
+            this.GRAddClient.Controls.Add(this.label11);
+            this.GRAddClient.Controls.Add(this.label12);
+            this.GRAddClient.Controls.Add(this.ADDDateContract);
+            this.GRAddClient.Controls.Add(this.label10);
+            this.GRAddClient.Controls.Add(this.AddClient);
             this.GRAddClient.Controls.Add(this.ADDFullName);
-            this.GRAddClient.Location = new System.Drawing.Point(826, 453);
+            this.GRAddClient.Controls.Add(this.ADDDateStart);
+            this.GRAddClient.Location = new System.Drawing.Point(5, 788);
             this.GRAddClient.Name = "GRAddClient";
             this.GRAddClient.Size = new System.Drawing.Size(682, 284);
             this.GRAddClient.TabIndex = 6;
@@ -288,81 +288,35 @@
             this.GRAddClient.Text = "ФормаЗаказчика";
             this.GRAddClient.Visible = false;
             // 
+            // ADDNumberContract
+            // 
+            this.ADDNumberContract.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ADDNumberContract.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ADDNumberContract.Location = new System.Drawing.Point(198, 173);
+            this.ADDNumberContract.Multiline = true;
+            this.ADDNumberContract.Name = "ADDNumberContract";
+            this.ADDNumberContract.Size = new System.Drawing.Size(469, 20);
+            this.ADDNumberContract.TabIndex = 1;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(12, 44);
+            this.label6.Location = new System.Drawing.Point(6, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 16);
             this.label6.TabIndex = 0;
             this.label6.Text = "Полное имя заказчика";
             // 
-            // label7
+            // label8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(12, 70);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Краткое имя заказчика";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(12, 174);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 16);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Номер договора";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Image = global::CYKP.Properties.Resources.Gnome_Window_Close_32;
-            this.button4.Location = new System.Drawing.Point(646, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(28, 33);
-            this.button4.TabIndex = 8;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // AddClient
-            // 
-            this.AddClient.BackColor = System.Drawing.Color.White;
-            this.AddClient.FlatAppearance.BorderSize = 0;
-            this.AddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddClient.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
-            this.AddClient.Location = new System.Drawing.Point(15, 250);
-            this.AddClient.Name = "AddClient";
-            this.AddClient.Size = new System.Drawing.Size(89, 33);
-            this.AddClient.TabIndex = 7;
-            this.AddClient.Text = "Сохранить";
-            this.AddClient.UseVisualStyleBackColor = false;
-            this.AddClient.Click += new System.EventHandler(this.AddClient_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(12, 201);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 16);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Статус заказчика";
-            // 
-            // ADDDateContract
-            // 
-            this.ADDDateContract.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ADDDateContract.Location = new System.Drawing.Point(205, 119);
-            this.ADDDateContract.Name = "ADDDateContract";
-            this.ADDDateContract.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateContract.TabIndex = 6;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(6, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 16);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Дата заведения";
             // 
             // ADDStatusContract
             // 
@@ -372,104 +326,150 @@
             this.ADDStatusContract.FormattingEnabled = true;
             this.ADDStatusContract.Items.AddRange(new object[] {
             " "});
-            this.ADDStatusContract.Location = new System.Drawing.Point(205, 197);
+            this.ADDStatusContract.Location = new System.Drawing.Point(198, 197);
             this.ADDStatusContract.Name = "ADDStatusContract";
             this.ADDStatusContract.Size = new System.Drawing.Size(469, 24);
             this.ADDStatusContract.TabIndex = 4;
             this.ADDStatusContract.DropDown += new System.EventHandler(this.StatusContract_DropDown);
             // 
-            // label11
+            // label7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(12, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 16);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Дата договора";
-            // 
-            // ADDDateContractEnd
-            // 
-            this.ADDDateContractEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ADDDateContractEnd.Location = new System.Drawing.Point(205, 144);
-            this.ADDDateContractEnd.Name = "ADDDateContractEnd";
-            this.ADDDateContractEnd.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateContractEnd.TabIndex = 3;
-            // 
-            // ADDDateStart
-            // 
-            this.ADDDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ADDDateStart.Location = new System.Drawing.Point(205, 93);
-            this.ADDDateStart.Name = "ADDDateStart";
-            this.ADDDateStart.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateStart.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(12, 96);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 16);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Дата заведения";
-            // 
-            // ADDNumberContract
-            // 
-            this.ADDNumberContract.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ADDNumberContract.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDNumberContract.Location = new System.Drawing.Point(205, 170);
-            this.ADDNumberContract.Multiline = true;
-            this.ADDNumberContract.Name = "ADDNumberContract";
-            this.ADDNumberContract.Size = new System.Drawing.Size(469, 20);
-            this.ADDNumberContract.TabIndex = 1;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(6, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Краткое имя заказчика";
             // 
             // ADDShrtName
             // 
             this.ADDShrtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ADDShrtName.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDShrtName.Location = new System.Drawing.Point(205, 66);
+            this.ADDShrtName.Location = new System.Drawing.Point(198, 74);
             this.ADDShrtName.Multiline = true;
             this.ADDShrtName.Name = "ADDShrtName";
             this.ADDShrtName.Size = new System.Drawing.Size(469, 20);
             this.ADDShrtName.TabIndex = 1;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Image = global::CYKP.Properties.Resources.Gnome_Window_Close_32;
+            this.button4.Location = new System.Drawing.Point(648, 9);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(28, 33);
+            this.button4.TabIndex = 8;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(12, 147);
+            this.label9.Location = new System.Drawing.Point(6, 151);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(184, 16);
             this.label9.TabIndex = 2;
             this.label9.Text = "Дата истечения договора";
             // 
+            // ADDDateContractEnd
+            // 
+            this.ADDDateContractEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ADDDateContractEnd.Location = new System.Drawing.Point(198, 147);
+            this.ADDDateContractEnd.Name = "ADDDateContractEnd";
+            this.ADDDateContractEnd.Size = new System.Drawing.Size(469, 20);
+            this.ADDDateContractEnd.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(6, 126);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 16);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Дата договора";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(6, 178);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(117, 16);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Номер договора";
+            // 
+            // ADDDateContract
+            // 
+            this.ADDDateContract.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ADDDateContract.Location = new System.Drawing.Point(198, 121);
+            this.ADDDateContract.Name = "ADDDateContract";
+            this.ADDDateContract.Size = new System.Drawing.Size(469, 20);
+            this.ADDDateContract.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(6, 205);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(130, 16);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Статус заказчика";
+            // 
+            // AddClient
+            // 
+            this.AddClient.BackColor = System.Drawing.Color.White;
+            this.AddClient.FlatAppearance.BorderSize = 0;
+            this.AddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddClient.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
+            this.AddClient.Location = new System.Drawing.Point(9, 234);
+            this.AddClient.Name = "AddClient";
+            this.AddClient.Size = new System.Drawing.Size(89, 33);
+            this.AddClient.TabIndex = 7;
+            this.AddClient.Text = "Сохранить";
+            this.AddClient.UseVisualStyleBackColor = false;
+            this.AddClient.Click += new System.EventHandler(this.AddClient_Click);
+            // 
             // ADDFullName
             // 
             this.ADDFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ADDFullName.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDFullName.Location = new System.Drawing.Point(205, 40);
+            this.ADDFullName.Location = new System.Drawing.Point(198, 48);
             this.ADDFullName.Multiline = true;
             this.ADDFullName.Name = "ADDFullName";
             this.ADDFullName.Size = new System.Drawing.Size(469, 20);
             this.ADDFullName.TabIndex = 1;
             // 
+            // ADDDateStart
+            // 
+            this.ADDDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ADDDateStart.Location = new System.Drawing.Point(198, 96);
+            this.ADDDateStart.Name = "ADDDateStart";
+            this.ADDDateStart.Size = new System.Drawing.Size(469, 20);
+            this.ADDDateStart.TabIndex = 3;
+            // 
             // GRAddOrder
             // 
             this.GRAddOrder.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.GRAddOrder.Controls.Add(this.ADDprjStatus);
-            this.GRAddOrder.Controls.Add(this.label15);
-            this.GRAddOrder.Controls.Add(this.ADDCBClientInOrder);
-            this.GRAddOrder.Controls.Add(this.label20);
-            this.GRAddOrder.Controls.Add(this.ADDDateProject);
             this.GRAddOrder.Controls.Add(this.AddOrder);
-            this.GRAddOrder.Controls.Add(this.button5);
-            this.GRAddOrder.Controls.Add(this.label14);
-            this.GRAddOrder.Controls.Add(this.ADDTBNameProject);
-            this.GRAddOrder.Controls.Add(this.label19);
-            this.GRAddOrder.Controls.Add(this.ADDTBОбъемЗаказа);
             this.GRAddOrder.Controls.Add(this.label13);
-            this.GRAddOrder.Location = new System.Drawing.Point(92, 480);
+            this.GRAddOrder.Controls.Add(this.ADDCBClientInOrder);
+            this.GRAddOrder.Controls.Add(this.label15);
+            this.GRAddOrder.Controls.Add(this.label19);
+            this.GRAddOrder.Controls.Add(this.label14);
+            this.GRAddOrder.Controls.Add(this.ADDDateProject);
+            this.GRAddOrder.Controls.Add(this.label20);
+            this.GRAddOrder.Controls.Add(this.button5);
+            this.GRAddOrder.Controls.Add(this.ADDTBОбъемЗаказа);
+            this.GRAddOrder.Controls.Add(this.ADDTBNameProject);
+            this.GRAddOrder.Location = new System.Drawing.Point(723, 788);
             this.GRAddOrder.Name = "GRAddOrder";
             this.GRAddOrder.Size = new System.Drawing.Size(693, 221);
             this.GRAddOrder.TabIndex = 7;
@@ -484,20 +484,34 @@
             this.ADDprjStatus.DisplayMember = "Name";
             this.ADDprjStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.ADDprjStatus.FormattingEnabled = true;
-            this.ADDprjStatus.Location = new System.Drawing.Point(183, 158);
+            this.ADDprjStatus.Location = new System.Drawing.Point(166, 152);
             this.ADDprjStatus.Name = "ADDprjStatus";
             this.ADDprjStatus.Size = new System.Drawing.Size(497, 24);
             this.ADDprjStatus.TabIndex = 17;
             // 
-            // label15
+            // AddOrder
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(26, 159);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 16);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Статус заказа";
+            this.AddOrder.BackColor = System.Drawing.Color.White;
+            this.AddOrder.FlatAppearance.BorderSize = 0;
+            this.AddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddOrder.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
+            this.AddOrder.Location = new System.Drawing.Point(9, 177);
+            this.AddOrder.Name = "AddOrder";
+            this.AddOrder.Size = new System.Drawing.Size(89, 33);
+            this.AddOrder.TabIndex = 7;
+            this.AddOrder.Text = "Сохранить";
+            this.AddOrder.UseVisualStyleBackColor = false;
+            this.AddOrder.Click += new System.EventHandler(this.AddOrder_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(10, 99);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(102, 16);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Объем заказа";
             // 
             // ADDCBClientInOrder
             // 
@@ -509,42 +523,58 @@
             this.ADDCBClientInOrder.FormattingEnabled = true;
             this.ADDCBClientInOrder.Items.AddRange(new object[] {
             " "});
-            this.ADDCBClientInOrder.Location = new System.Drawing.Point(97, 41);
+            this.ADDCBClientInOrder.Location = new System.Drawing.Point(83, 35);
             this.ADDCBClientInOrder.Name = "ADDCBClientInOrder";
             this.ADDCBClientInOrder.Size = new System.Drawing.Size(583, 24);
             this.ADDCBClientInOrder.TabIndex = 9;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(10, 154);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(106, 16);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Статус заказа";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(9, 70);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 16);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Имя заказа";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(10, 125);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 16);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Дата заведения";
+            // 
+            // ADDDateProject
+            // 
+            this.ADDDateProject.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ADDDateProject.Location = new System.Drawing.Point(166, 124);
+            this.ADDDateProject.Name = "ADDDateProject";
+            this.ADDDateProject.Size = new System.Drawing.Size(497, 20);
+            this.ADDDateProject.TabIndex = 15;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(22, 43);
+            this.label20.Location = new System.Drawing.Point(9, 38);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(71, 16);
             this.label20.TabIndex = 8;
             this.label20.Text = "Заказчик";
-            // 
-            // ADDDateProject
-            // 
-            this.ADDDateProject.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ADDDateProject.Location = new System.Drawing.Point(183, 130);
-            this.ADDDateProject.Name = "ADDDateProject";
-            this.ADDDateProject.Size = new System.Drawing.Size(497, 20);
-            this.ADDDateProject.TabIndex = 15;
-            // 
-            // AddOrder
-            // 
-            this.AddOrder.BackColor = System.Drawing.Color.White;
-            this.AddOrder.FlatAppearance.BorderSize = 0;
-            this.AddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddOrder.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
-            this.AddOrder.Location = new System.Drawing.Point(25, 182);
-            this.AddOrder.Name = "AddOrder";
-            this.AddOrder.Size = new System.Drawing.Size(89, 33);
-            this.AddOrder.TabIndex = 7;
-            this.AddOrder.Text = "Сохранить";
-            this.AddOrder.UseVisualStyleBackColor = false;
-            this.AddOrder.Click += new System.EventHandler(this.AddOrder_Click);
             // 
             // button5
             // 
@@ -553,63 +583,33 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Image = global::CYKP.Properties.Resources.Gnome_Window_Close_32;
-            this.button5.Location = new System.Drawing.Point(654, 9);
+            this.button5.Location = new System.Drawing.Point(660, 8);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(27, 27);
             this.button5.TabIndex = 8;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(26, 130);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 16);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "Дата заведения";
-            // 
-            // ADDTBNameProject
-            // 
-            this.ADDTBNameProject.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ADDTBNameProject.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDTBNameProject.Location = new System.Drawing.Point(183, 74);
-            this.ADDTBNameProject.Multiline = true;
-            this.ADDTBNameProject.Name = "ADDTBNameProject";
-            this.ADDTBNameProject.Size = new System.Drawing.Size(497, 20);
-            this.ADDTBNameProject.TabIndex = 1;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(25, 75);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 16);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Имя заказа";
-            // 
             // ADDTBОбъемЗаказа
             // 
             this.ADDTBОбъемЗаказа.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ADDTBОбъемЗаказа.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDTBОбъемЗаказа.Location = new System.Drawing.Point(183, 103);
+            this.ADDTBОбъемЗаказа.Location = new System.Drawing.Point(166, 97);
             this.ADDTBОбъемЗаказа.MaxLength = 6;
             this.ADDTBОбъемЗаказа.Multiline = true;
             this.ADDTBОбъемЗаказа.Name = "ADDTBОбъемЗаказа";
             this.ADDTBОбъемЗаказа.Size = new System.Drawing.Size(497, 20);
             this.ADDTBОбъемЗаказа.TabIndex = 13;
             // 
-            // label13
+            // ADDTBNameProject
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(26, 104);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(102, 16);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Объем заказа";
+            this.ADDTBNameProject.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ADDTBNameProject.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ADDTBNameProject.Location = new System.Drawing.Point(166, 68);
+            this.ADDTBNameProject.Multiline = true;
+            this.ADDTBNameProject.Name = "ADDTBNameProject";
+            this.ADDTBNameProject.Size = new System.Drawing.Size(497, 20);
+            this.ADDTBNameProject.TabIndex = 1;
             // 
             // AddModule
             // 
@@ -628,7 +628,7 @@
             this.AddModule.Controls.Add(this.label22);
             this.AddModule.Controls.Add(this.ADDNameModule);
             this.AddModule.Controls.Add(this.label2);
-            this.AddModule.Location = new System.Drawing.Point(1333, 616);
+            this.AddModule.Location = new System.Drawing.Point(1435, 788);
             this.AddModule.Name = "AddModule";
             this.AddModule.Size = new System.Drawing.Size(647, 246);
             this.AddModule.TabIndex = 6;
@@ -1044,7 +1044,7 @@
             this.GROtchet.Controls.Add(this.label18);
             this.GROtchet.Location = new System.Drawing.Point(413, 12);
             this.GROtchet.Name = "GROtchet";
-            this.GROtchet.Size = new System.Drawing.Size(861, 421);
+            this.GROtchet.Size = new System.Drawing.Size(997, 580);
             this.GROtchet.TabIndex = 9;
             this.GROtchet.TabStop = false;
             this.GROtchet.Text = "Отчет";
@@ -1056,7 +1056,7 @@
             this.GRINFOModule.Controls.Add(this.label38);
             this.GRINFOModule.Controls.Add(this.GridInfoModules);
             this.GRINFOModule.Controls.Add(this.label37);
-            this.GRINFOModule.Controls.Add(this.button2);
+            this.GRINFOModule.Controls.Add(this.INFBTLogModule);
             this.GRINFOModule.Controls.Add(this.label44);
             this.GRINFOModule.Controls.Add(this.label45);
             this.GRINFOModule.Controls.Add(this.label46);
@@ -1133,19 +1133,20 @@
             this.label37.TabIndex = 18;
             this.label37.Text = "История модуля:";
             // 
-            // button2
+            // INFBTLogModule
             // 
-            this.button2.AutoEllipsis = true;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Image = global::CYKP.Properties.Resources.notes_2_;
-            this.button2.Location = new System.Drawing.Point(10, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 80);
-            this.button2.TabIndex = 17;
-            this.button2.UseVisualStyleBackColor = false;
+            this.INFBTLogModule.AutoEllipsis = true;
+            this.INFBTLogModule.BackColor = System.Drawing.Color.Transparent;
+            this.INFBTLogModule.FlatAppearance.BorderSize = 0;
+            this.INFBTLogModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.INFBTLogModule.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFBTLogModule.Image = global::CYKP.Properties.Resources.notes_2_;
+            this.INFBTLogModule.Location = new System.Drawing.Point(10, 181);
+            this.INFBTLogModule.Name = "INFBTLogModule";
+            this.INFBTLogModule.Size = new System.Drawing.Size(70, 80);
+            this.INFBTLogModule.TabIndex = 17;
+            this.INFBTLogModule.UseVisualStyleBackColor = false;
+            this.INFBTLogModule.Click += new System.EventHandler(this.INFBTLogModule_Click);
             // 
             // label44
             // 
@@ -1637,7 +1638,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1846, 883);
             this.Controls.Add(this.GROtchet);
             this.Controls.Add(this.EdditingGB);
@@ -1797,7 +1798,7 @@
         private System.Windows.Forms.DataGridView GridInfoModules;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button INFBTLogModule;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;

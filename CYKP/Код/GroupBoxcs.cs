@@ -56,6 +56,18 @@ namespace CYKP.Код
 
         }
 
+        public int CheckControls(Control control)
+        {
+            foreach (Control item in control.Controls)
+                if (item.Text == "" & item.GetType() != typeof(Button))
+                {
+                    item.Select();
+                    return 0;
+                }
+            return 1;
+
+        }
+
      
 
         public void GetGB (Control GB)
