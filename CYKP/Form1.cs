@@ -30,7 +30,12 @@ namespace CYKP
             GridInfoOrders.Rows.Add(4);
             GridInfoModules.Rows.Add(5);
             var grid = new Grid(Menu, ref MenuId, 1);
-           
+            var CB = new CB();
+            CB.ComboBoxItem(1, ADDStatusContract);
+            CB.ComboBoxItem(2, ADDprjStatus);
+            CB.ComboBoxItem(3, ADDStatusModule);
+
+
         }
         int Userid;
         private void button1_Click(object sender, EventArgs e) //Логгин
@@ -51,27 +56,17 @@ namespace CYKP
 
         }
 
-        //void ListComboBoxStatus(List<ComboBox> CB) //Добавление в массив компобоксы СТАТУСЫ
-        //{
-        //    CB.Add(ADDStatusContract);
-        //    CB.Add(ADDprjStatus);
-        //    CB.Add(ADDStatusModule);
-        //}
+         void InsertOfList(Control control,List<string> list)
+        {
+            foreach (Control item in control.Controls)
+            {
+                int i = control.Controls.IndexOf(item);
+                foreach (Control c in control.Controls)
+                    if (c.TabIndex == i)
+                        c.Text = list[i];
+            }
+        }
 
-        //void ListComboBoxOrder(List<ComboBox> CB) //Добавление в массив компобоксы КЛИЕНТЫ/ЗАКАЗЧИКИ/МОДУЛИ
-        //{
-
-        //    CB.Add(ADDCBClentInModule);
-        //    CB.Add(ADDCBOrderinModule);
-        //    CB.Add(ADDCBClientInOrder);
-        //    CB.Add(CBSearchClient);
-           
-        //}
-        
-        //void ListGroupBox(List<GroupBox> GR) //Добавление в массив группбоксы - МЕНЮ
-        //{            
-        //    GR.AddRange(this.Controls.OfType<GroupBox>());
-        //}
 
         int idClient;            
         private void GRIDListClient_CellClick(object sender, DataGridViewCellEventArgs e) //Меню редактирование проектов
@@ -93,15 +88,9 @@ namespace CYKP
             QR.groupbox = GRAddClient; //инициализирует физический группбокс в классе
 
             QR.CloseCombo(this, "EdditingGB");
-            QR.GRGet(411, 510);// //Получение интерфейса                                
+            QR.GRGet(411, 510);// //Получение интерфейса    
 
-            ADDFullName.Text = list[0];
-            ADDShrtName.Text = list[1];
-            ADDNumberContract.Text = list[2];
-            ADDStatusContract.Text = list[3];
-            ADDDateStart.Value = Convert.ToDateTime(list[4]);
-            ADDDateContract.Value = Convert.ToDateTime(list[5]);
-            ADDDateContractEnd.Value = Convert.ToDateTime(list[6]);
+            InsertOfList(GRAddClient, list);          
 
             IComb.ComboBoxItemOrder(CBSearchOrder); //Добавляет список заказов в компобокс
             GRinEdditingOrder.Visible = true;
@@ -140,12 +129,8 @@ namespace CYKP
             QR.GRGet(411, 510);// опредление интерфейса добавление/Изменение заказчика
 
             ADDCBClientInOrder.Enabled = false;
-            ADDCBClientInOrder.Text = GRIDListClient.CurrentCell.Value.ToString();
-            ADDTBNameProject.Text = QR.NameOrder;
-
-            ADDTBОбъемЗаказа.Text = list[2];
-            ADDDateProject.Value = Convert.ToDateTime(list[3]);
-            ADDprjStatus.Text = list[4];
+            InsertOfList(GRAddOrder, list);
+           
             IComb.ComboBoxItemModule(CBSearchModule);
             GRinEdditingModule.Visible = true;
             QR.ListModule(GRIDListModule);
@@ -172,16 +157,7 @@ namespace CYKP
             ADDCBClentInModule.Enabled = false;
             ADDCBOrderinModule.Enabled = false;
 
-            ADDCBClentInModule.Text = GRIDListClient.CurrentCell.Value.ToString();
-            ADDCBOrderinModule.Text = GRIDListOrder.CurrentCell.Value.ToString();
-            ADDNameModule.Text= GRIDListModule.CurrentCell.Value.ToString();
-            ADDCountModule.Text = list[3];
-            ADDDateCreate.Value = Convert.ToDateTime(list[4]);
-            ADDStatusModule.Text = list[5];
-
-
-
-
+            InsertOfList(AddModule, list);
         }
 
         int rowIndex; //Определяет какой индекс грида был нажат

@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TBLogin = new System.Windows.Forms.TextBox();
             this.BTlogin = new System.Windows.Forms.Button();
             this.Menu = new System.Windows.Forms.DataGridView();
@@ -209,8 +209,8 @@
             this.Menu.Location = new System.Drawing.Point(14, 11);
             this.Menu.Name = "Menu";
             this.Menu.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Menu.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle121.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Menu.RowsDefaultCellStyle = dataGridViewCellStyle121;
             this.Menu.Size = new System.Drawing.Size(393, 292);
             this.Menu.TabIndex = 2;
             this.Menu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Menu_CellClick);
@@ -280,10 +280,10 @@
             this.GRAddClient.Controls.Add(this.AddClient);
             this.GRAddClient.Controls.Add(this.ADDFullName);
             this.GRAddClient.Controls.Add(this.ADDDateStart);
-            this.GRAddClient.Location = new System.Drawing.Point(5, 788);
+            this.GRAddClient.Location = new System.Drawing.Point(65, 864);
             this.GRAddClient.Name = "GRAddClient";
             this.GRAddClient.Size = new System.Drawing.Size(682, 284);
-            this.GRAddClient.TabIndex = 6;
+            this.GRAddClient.TabIndex = 1000;
             this.GRAddClient.TabStop = false;
             this.GRAddClient.Text = "ФормаЗаказчика";
             this.GRAddClient.Visible = false;
@@ -296,7 +296,7 @@
             this.ADDNumberContract.Multiline = true;
             this.ADDNumberContract.Name = "ADDNumberContract";
             this.ADDNumberContract.Size = new System.Drawing.Size(469, 20);
-            this.ADDNumberContract.TabIndex = 1;
+            this.ADDNumberContract.TabIndex = 2;
             // 
             // label6
             // 
@@ -305,7 +305,7 @@
             this.label6.Location = new System.Drawing.Point(6, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 16);
-            this.label6.TabIndex = 0;
+            this.label6.TabIndex = 1000;
             this.label6.Text = "Полное имя заказчика";
             // 
             // label8
@@ -315,7 +315,7 @@
             this.label8.Location = new System.Drawing.Point(6, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 16);
-            this.label8.TabIndex = 2;
+            this.label8.TabIndex = 1000;
             this.label8.Text = "Дата заведения";
             // 
             // ADDStatusContract
@@ -329,7 +329,7 @@
             this.ADDStatusContract.Location = new System.Drawing.Point(198, 197);
             this.ADDStatusContract.Name = "ADDStatusContract";
             this.ADDStatusContract.Size = new System.Drawing.Size(469, 24);
-            this.ADDStatusContract.TabIndex = 4;
+            this.ADDStatusContract.TabIndex = 3;
             this.ADDStatusContract.DropDown += new System.EventHandler(this.StatusContract_DropDown);
             // 
             // label7
@@ -339,7 +339,7 @@
             this.label7.Location = new System.Drawing.Point(6, 74);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(168, 16);
-            this.label7.TabIndex = 0;
+            this.label7.TabIndex = 1000;
             this.label7.Text = "Краткое имя заказчика";
             // 
             // ADDShrtName
@@ -362,7 +362,7 @@
             this.button4.Location = new System.Drawing.Point(648, 9);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(28, 33);
-            this.button4.TabIndex = 8;
+            this.button4.TabIndex = 1000;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -373,7 +373,7 @@
             this.label9.Location = new System.Drawing.Point(6, 151);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(184, 16);
-            this.label9.TabIndex = 2;
+            this.label9.TabIndex = 1000;
             this.label9.Text = "Дата истечения договора";
             // 
             // ADDDateContractEnd
@@ -382,7 +382,7 @@
             this.ADDDateContractEnd.Location = new System.Drawing.Point(198, 147);
             this.ADDDateContractEnd.Name = "ADDDateContractEnd";
             this.ADDDateContractEnd.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateContractEnd.TabIndex = 3;
+            this.ADDDateContractEnd.TabIndex = 6;
             // 
             // label11
             // 
@@ -391,7 +391,7 @@
             this.label11.Location = new System.Drawing.Point(6, 126);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 16);
-            this.label11.TabIndex = 5;
+            this.label11.TabIndex = 1000;
             this.label11.Text = "Дата договора";
             // 
             // label12
@@ -401,7 +401,7 @@
             this.label12.Location = new System.Drawing.Point(6, 178);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(117, 16);
-            this.label12.TabIndex = 0;
+            this.label12.TabIndex = 1000;
             this.label12.Text = "Номер договора";
             // 
             // ADDDateContract
@@ -410,7 +410,7 @@
             this.ADDDateContract.Location = new System.Drawing.Point(198, 121);
             this.ADDDateContract.Name = "ADDDateContract";
             this.ADDDateContract.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateContract.TabIndex = 6;
+            this.ADDDateContract.TabIndex = 5;
             // 
             // label10
             // 
@@ -419,7 +419,7 @@
             this.label10.Location = new System.Drawing.Point(6, 205);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 16);
-            this.label10.TabIndex = 0;
+            this.label10.TabIndex = 1000;
             this.label10.Text = "Статус заказчика";
             // 
             // AddClient
@@ -431,7 +431,7 @@
             this.AddClient.Location = new System.Drawing.Point(9, 234);
             this.AddClient.Name = "AddClient";
             this.AddClient.Size = new System.Drawing.Size(89, 33);
-            this.AddClient.TabIndex = 7;
+            this.AddClient.TabIndex = 1000;
             this.AddClient.Text = "Сохранить";
             this.AddClient.UseVisualStyleBackColor = false;
             this.AddClient.Click += new System.EventHandler(this.AddClient_Click);
@@ -444,7 +444,7 @@
             this.ADDFullName.Multiline = true;
             this.ADDFullName.Name = "ADDFullName";
             this.ADDFullName.Size = new System.Drawing.Size(469, 20);
-            this.ADDFullName.TabIndex = 1;
+            this.ADDFullName.TabIndex = 0;
             // 
             // ADDDateStart
             // 
@@ -452,7 +452,7 @@
             this.ADDDateStart.Location = new System.Drawing.Point(198, 96);
             this.ADDDateStart.Name = "ADDDateStart";
             this.ADDDateStart.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateStart.TabIndex = 3;
+            this.ADDDateStart.TabIndex = 4;
             // 
             // GRAddOrder
             // 
@@ -469,10 +469,10 @@
             this.GRAddOrder.Controls.Add(this.button5);
             this.GRAddOrder.Controls.Add(this.ADDTBОбъемЗаказа);
             this.GRAddOrder.Controls.Add(this.ADDTBNameProject);
-            this.GRAddOrder.Location = new System.Drawing.Point(723, 788);
+            this.GRAddOrder.Location = new System.Drawing.Point(117, 606);
             this.GRAddOrder.Name = "GRAddOrder";
             this.GRAddOrder.Size = new System.Drawing.Size(693, 221);
-            this.GRAddOrder.TabIndex = 7;
+            this.GRAddOrder.TabIndex = 1000;
             this.GRAddOrder.TabStop = false;
             this.GRAddOrder.Text = "ФормаЗаказа";
             this.GRAddOrder.Visible = false;
@@ -487,7 +487,7 @@
             this.ADDprjStatus.Location = new System.Drawing.Point(166, 152);
             this.ADDprjStatus.Name = "ADDprjStatus";
             this.ADDprjStatus.Size = new System.Drawing.Size(497, 24);
-            this.ADDprjStatus.TabIndex = 17;
+            this.ADDprjStatus.TabIndex = 4;
             // 
             // AddOrder
             // 
@@ -498,7 +498,7 @@
             this.AddOrder.Location = new System.Drawing.Point(9, 177);
             this.AddOrder.Name = "AddOrder";
             this.AddOrder.Size = new System.Drawing.Size(89, 33);
-            this.AddOrder.TabIndex = 7;
+            this.AddOrder.TabIndex = 1000;
             this.AddOrder.Text = "Сохранить";
             this.AddOrder.UseVisualStyleBackColor = false;
             this.AddOrder.Click += new System.EventHandler(this.AddOrder_Click);
@@ -510,7 +510,7 @@
             this.label13.Location = new System.Drawing.Point(10, 99);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 16);
-            this.label13.TabIndex = 0;
+            this.label13.TabIndex = 1000;
             this.label13.Text = "Объем заказа";
             // 
             // ADDCBClientInOrder
@@ -526,7 +526,7 @@
             this.ADDCBClientInOrder.Location = new System.Drawing.Point(83, 35);
             this.ADDCBClientInOrder.Name = "ADDCBClientInOrder";
             this.ADDCBClientInOrder.Size = new System.Drawing.Size(583, 24);
-            this.ADDCBClientInOrder.TabIndex = 9;
+            this.ADDCBClientInOrder.TabIndex = 0;
             // 
             // label15
             // 
@@ -535,7 +535,7 @@
             this.label15.Location = new System.Drawing.Point(10, 154);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(106, 16);
-            this.label15.TabIndex = 16;
+            this.label15.TabIndex = 1000;
             this.label15.Text = "Статус заказа";
             // 
             // label19
@@ -545,7 +545,7 @@
             this.label19.Location = new System.Drawing.Point(9, 70);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 16);
-            this.label19.TabIndex = 0;
+            this.label19.TabIndex = 1000;
             this.label19.Text = "Имя заказа";
             // 
             // label14
@@ -555,7 +555,7 @@
             this.label14.Location = new System.Drawing.Point(10, 125);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(117, 16);
-            this.label14.TabIndex = 14;
+            this.label14.TabIndex = 1000;
             this.label14.Text = "Дата заведения";
             // 
             // ADDDateProject
@@ -564,7 +564,7 @@
             this.ADDDateProject.Location = new System.Drawing.Point(166, 124);
             this.ADDDateProject.Name = "ADDDateProject";
             this.ADDDateProject.Size = new System.Drawing.Size(497, 20);
-            this.ADDDateProject.TabIndex = 15;
+            this.ADDDateProject.TabIndex = 3;
             // 
             // label20
             // 
@@ -573,7 +573,7 @@
             this.label20.Location = new System.Drawing.Point(9, 38);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(71, 16);
-            this.label20.TabIndex = 8;
+            this.label20.TabIndex = 1000;
             this.label20.Text = "Заказчик";
             // 
             // button5
@@ -586,7 +586,7 @@
             this.button5.Location = new System.Drawing.Point(660, 8);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(27, 27);
-            this.button5.TabIndex = 8;
+            this.button5.TabIndex = 1000;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -599,7 +599,7 @@
             this.ADDTBОбъемЗаказа.Multiline = true;
             this.ADDTBОбъемЗаказа.Name = "ADDTBОбъемЗаказа";
             this.ADDTBОбъемЗаказа.Size = new System.Drawing.Size(497, 20);
-            this.ADDTBОбъемЗаказа.TabIndex = 13;
+            this.ADDTBОбъемЗаказа.TabIndex = 2;
             // 
             // ADDTBNameProject
             // 
@@ -628,10 +628,10 @@
             this.AddModule.Controls.Add(this.label22);
             this.AddModule.Controls.Add(this.ADDNameModule);
             this.AddModule.Controls.Add(this.label2);
-            this.AddModule.Location = new System.Drawing.Point(1435, 788);
+            this.AddModule.Location = new System.Drawing.Point(1270, 657);
             this.AddModule.Name = "AddModule";
             this.AddModule.Size = new System.Drawing.Size(647, 246);
-            this.AddModule.TabIndex = 6;
+            this.AddModule.TabIndex = 1000;
             this.AddModule.TabStop = false;
             this.AddModule.Text = "ФормаМодуля";
             this.AddModule.Visible = false;
@@ -646,7 +646,7 @@
             this.ADDStatusModule.Location = new System.Drawing.Point(181, 178);
             this.ADDStatusModule.Name = "ADDStatusModule";
             this.ADDStatusModule.Size = new System.Drawing.Size(458, 24);
-            this.ADDStatusModule.TabIndex = 17;
+            this.ADDStatusModule.TabIndex = 5;
             // 
             // button1
             // 
@@ -658,7 +658,7 @@
             this.button1.Location = new System.Drawing.Point(612, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(27, 27);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 1000;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -669,7 +669,7 @@
             this.label4.Location = new System.Drawing.Point(13, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 16);
-            this.label4.TabIndex = 16;
+            this.label4.TabIndex = 1000;
             this.label4.Text = "Статус модуля";
             // 
             // AddBTModule
@@ -681,7 +681,7 @@
             this.AddBTModule.Location = new System.Drawing.Point(13, 207);
             this.AddBTModule.Name = "AddBTModule";
             this.AddBTModule.Size = new System.Drawing.Size(89, 33);
-            this.AddBTModule.TabIndex = 12;
+            this.AddBTModule.TabIndex = 1000;
             this.AddBTModule.Text = "Сохранить";
             this.AddBTModule.UseVisualStyleBackColor = false;
             this.AddBTModule.Click += new System.EventHandler(this.AddBTModule_Click);
@@ -692,7 +692,7 @@
             this.ADDDateCreate.Location = new System.Drawing.Point(181, 150);
             this.ADDDateCreate.Name = "ADDDateCreate";
             this.ADDDateCreate.Size = new System.Drawing.Size(458, 20);
-            this.ADDDateCreate.TabIndex = 15;
+            this.ADDDateCreate.TabIndex = 4;
             // 
             // ADDCBOrderinModule
             // 
@@ -708,7 +708,7 @@
             this.ADDCBOrderinModule.Location = new System.Drawing.Point(87, 67);
             this.ADDCBOrderinModule.Name = "ADDCBOrderinModule";
             this.ADDCBOrderinModule.Size = new System.Drawing.Size(552, 24);
-            this.ADDCBOrderinModule.TabIndex = 11;
+            this.ADDCBOrderinModule.TabIndex = 1;
             this.ADDCBOrderinModule.TextChanged += new System.EventHandler(this.ADDCBOrderinModule_TextChanged);
             // 
             // label5
@@ -718,7 +718,7 @@
             this.label5.Location = new System.Drawing.Point(13, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 16);
-            this.label5.TabIndex = 14;
+            this.label5.TabIndex = 1000;
             this.label5.Text = "Дата заведения";
             // 
             // ADDCountModule
@@ -729,7 +729,7 @@
             this.ADDCountModule.Multiline = true;
             this.ADDCountModule.Name = "ADDCountModule";
             this.ADDCountModule.Size = new System.Drawing.Size(458, 20);
-            this.ADDCountModule.TabIndex = 13;
+            this.ADDCountModule.TabIndex = 3;
             // 
             // label3
             // 
@@ -738,7 +738,7 @@
             this.label3.Location = new System.Drawing.Point(12, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 16);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 1000;
             this.label3.Text = "Заказ";
             // 
             // label21
@@ -748,7 +748,7 @@
             this.label21.Location = new System.Drawing.Point(12, 124);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(163, 16);
-            this.label21.TabIndex = 0;
+            this.label21.TabIndex = 1000;
             this.label21.Text = "Объем Количество шт.";
             // 
             // ADDCBClentInModule
@@ -764,7 +764,7 @@
             this.ADDCBClentInModule.Location = new System.Drawing.Point(87, 37);
             this.ADDCBClentInModule.Name = "ADDCBClentInModule";
             this.ADDCBClentInModule.Size = new System.Drawing.Size(552, 24);
-            this.ADDCBClentInModule.TabIndex = 9;
+            this.ADDCBClentInModule.TabIndex = 0;
             this.ADDCBClentInModule.TextChanged += new System.EventHandler(this.ADDCBClentInModule_TextChanged);
             // 
             // label22
@@ -774,7 +774,7 @@
             this.label22.Location = new System.Drawing.Point(12, 99);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(90, 16);
-            this.label22.TabIndex = 0;
+            this.label22.TabIndex = 1000;
             this.label22.Text = "Имя Модуля";
             // 
             // ADDNameModule
@@ -785,7 +785,7 @@
             this.ADDNameModule.Multiline = true;
             this.ADDNameModule.Name = "ADDNameModule";
             this.ADDNameModule.Size = new System.Drawing.Size(458, 20);
-            this.ADDNameModule.TabIndex = 1;
+            this.ADDNameModule.TabIndex = 2;
             // 
             // label2
             // 
@@ -794,7 +794,7 @@
             this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 16);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 1000;
             this.label2.Text = "Заказчик";
             // 
             // EdditingGB
@@ -876,8 +876,8 @@
             this.GRIDListModule.Location = new System.Drawing.Point(9, 63);
             this.GRIDListModule.Name = "GRIDListModule";
             this.GRIDListModule.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListModule.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle122.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListModule.RowsDefaultCellStyle = dataGridViewCellStyle122;
             this.GRIDListModule.Size = new System.Drawing.Size(325, 386);
             this.GRIDListModule.TabIndex = 3;
             this.GRIDListModule.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListModule_CellClick);
@@ -953,8 +953,8 @@
             this.GRIDListOrder.Location = new System.Drawing.Point(9, 63);
             this.GRIDListOrder.Name = "GRIDListOrder";
             this.GRIDListOrder.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListOrder.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle123.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListOrder.RowsDefaultCellStyle = dataGridViewCellStyle123;
             this.GRIDListOrder.Size = new System.Drawing.Size(325, 386);
             this.GRIDListOrder.TabIndex = 3;
             this.GRIDListOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListOrder_CellClick);
@@ -1026,8 +1026,8 @@
             this.GRIDListClient.Location = new System.Drawing.Point(6, 72);
             this.GRIDListClient.Name = "GRIDListClient";
             this.GRIDListClient.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListClient.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle124.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListClient.RowsDefaultCellStyle = dataGridViewCellStyle124;
             this.GRIDListClient.Size = new System.Drawing.Size(330, 386);
             this.GRIDListClient.TabIndex = 3;
             this.GRIDListClient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListClient_CellClick);
@@ -1090,26 +1090,26 @@
             this.GridInfoModules.ColumnHeadersVisible = false;
             this.GridInfoModules.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle125.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle125.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle125.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle125.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle125.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle125.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle125;
             this.GridInfoModules.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoModules.Location = new System.Drawing.Point(125, 31);
             this.GridInfoModules.Name = "GridInfoModules";
             this.GridInfoModules.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle126.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle126.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle126.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle126.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle126.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle126.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle126;
             this.GridInfoModules.RowHeadersVisible = false;
             this.GridInfoModules.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoModules.RowTemplate.Height = 10;
@@ -1230,26 +1230,26 @@
             this.GridInfoOrders.ColumnHeadersVisible = false;
             this.GridInfoOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle127.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle127.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle127.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle127.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle127.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle127.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle127;
             this.GridInfoOrders.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoOrders.Location = new System.Drawing.Point(176, 38);
             this.GridInfoOrders.Name = "GridInfoOrders";
             this.GridInfoOrders.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle128.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle128.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle128.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle128.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle128;
             this.GridInfoOrders.RowHeadersVisible = false;
             this.GridInfoOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoOrders.RowTemplate.Height = 10;
@@ -1297,8 +1297,8 @@
             this.INFGridModules.Location = new System.Drawing.Point(537, 38);
             this.INFGridModules.Name = "INFGridModules";
             this.INFGridModules.RowHeadersVisible = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle129.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle129;
             this.INFGridModules.Size = new System.Drawing.Size(270, 290);
             this.INFGridModules.TabIndex = 16;
             // 
@@ -1411,26 +1411,26 @@
             this.GridInfoClients.ColumnHeadersVisible = false;
             this.GridInfoClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle130.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle130.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle130.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle130.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle130;
             this.GridInfoClients.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoClients.Location = new System.Drawing.Point(176, 38);
             this.GridInfoClients.Name = "GridInfoClients";
             this.GridInfoClients.ReadOnly = true;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle131.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle131.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle131;
             this.GridInfoClients.RowHeadersVisible = false;
             this.GridInfoClients.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoClients.RowTemplate.Height = 10;
@@ -1477,8 +1477,8 @@
             this.INFGridOrders.Location = new System.Drawing.Point(537, 38);
             this.INFGridOrders.Name = "INFGridOrders";
             this.INFGridOrders.RowHeadersVisible = false;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle132.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle132;
             this.INFGridOrders.Size = new System.Drawing.Size(270, 290);
             this.INFGridOrders.TabIndex = 16;
             // 

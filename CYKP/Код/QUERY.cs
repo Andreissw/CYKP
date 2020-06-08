@@ -430,7 +430,7 @@ namespace CYKP.Код
                 if (list.Count == 0)
                     return lists;
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Name_Client.Id).Select(c => c.H_CYKP_Name_Client.Name).FirstOrDefault()); // Имя Клиента
-                lists.Add(list.OrderByDescending(b => b.H_CYKP_Name_Project.Id).Select(c => c.H_CYKP_Name_Project.NameProject).FirstOrDefault()); // Имя Клиента
+                lists.Add(list.OrderByDescending(b => b.H_CYKP_Name_Project.Id).Select(c => c.H_CYKP_Name_Project.NameProject).FirstOrDefault()); // Имя заказа
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Log.Id).Select(c => c.H_CYKP_Name_Project.Count).FirstOrDefault()); //Количество в заказе
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Log.Id).Select(c => c.H_CYKP_Log.Date).FirstOrDefault().ToString()); //Дата
                 lists.Add(list.OrderByDescending(b => b.H_CYKP_Log.Id).Select(c => c.H_CYKP_StatusProduct.Name).FirstOrDefault());//Статус          

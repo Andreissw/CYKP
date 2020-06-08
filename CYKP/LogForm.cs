@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace CYKP
 {
+    interface Iorder
+    {
+
+    }
     public partial class LogForm : Form
     {
         public LogForm(string name)
@@ -23,6 +27,11 @@ namespace CYKP
         
 
         private void LogForm_Load(object sender, EventArgs e)
+        {
+            LogMethod();
+        }
+
+        private void LogMethod()
         {
             var qu = new QUERY();
             qu.Grid = GridLog;

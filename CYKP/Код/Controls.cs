@@ -11,6 +11,13 @@ namespace CYKP.Код
     {
         //Control control { get; set; }
         public List<T> list { get; set; }
+       
+
+
+        public Controls()
+        {
+            
+        }
 
         public Controls(Control control)
         {
@@ -20,7 +27,8 @@ namespace CYKP.Код
         public List<T> controlMethod<T>(Control control)
         {
             return control.Controls.OfType<T>().ToList();
-        }        
+        }
 
+       
     }
 }

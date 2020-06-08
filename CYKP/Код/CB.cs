@@ -124,7 +124,7 @@ namespace CYKP.Код
         {
             using (var Connect = new Connect())
             {
-                var list = from c in Connect.StatusProducts.Where(c => c.ModeId == modeId)
+                var list = from c in Connect.StatusProducts.Where(c => c.ModeId == modeId) orderby c.Name
                            select new { c.Name };
 
                 CB.DataSource = list.ToList();
