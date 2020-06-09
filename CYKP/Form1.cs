@@ -422,19 +422,26 @@ namespace CYKP
             Grid.INFO(this);
         }
 
+
+        private void INFBTLog_Click(object sender, EventArgs e)
+        {
+            OpenForm(0, GridInfoClients);
+        }
+
         private void INFBTLogModule_Click(object sender, EventArgs e)
         {
-
+            OpenForm(2, GridInfoModules);
         }
 
         private void INFBTLogorder_Click(object sender, EventArgs e)
         {
-            OpenForm();
+            OpenForm(1, GridInfoOrders);
         }
 
-        void OpenForm()
-        {
-            var log = new LogForm(GridInfoOrders.Rows[1].Cells[0].Value.ToString());
+        void OpenForm(int id, DataGridView gr)
+        {   
+            var log = new LogForm(gr.Rows[id].Cells[0].Value.ToString());
+            log.id = id;
             log.ShowDialog();
         }
 
@@ -447,6 +454,5 @@ namespace CYKP
         private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
         {CloseBT(); }
 
-       
     }
 }

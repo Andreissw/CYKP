@@ -85,7 +85,7 @@ namespace CYKP.Код
                 {
                     Name = Поиск("ADDFullName", list),
                     srtName = Поиск("ADDShrtName", list),
-                    StatusID = statusid,
+                    StatusID = statusid,                    
                     FactDate = DateTime.Now,
 
                 };
@@ -94,7 +94,7 @@ namespace CYKP.Код
                 Connect.SaveChanges();
 
                 var log = new List<H_CYKP_Log>()
-                {
+                { 
                     new H_CYKP_Log { Date = Convert.ToDateTime(Поиск("ADDDateStart",list)),TypeModeid = 1, ClientId = idClient, LogInfoID = LogInfo.Id,
                             StatusProductId = statusid,    UserId = UserID,  DateTypeID = 1  },
 
@@ -578,6 +578,52 @@ namespace CYKP.Код
                             where Order.Id == idOrder && log.Module == null
 
                             select new { InfoLog.FactDate, InfoLog.Name,  H_CYKP_StatusProduct = stat.Name, log.Date, InfoLog.Count, user.UserName, usSt.Status })
+                   .ToList();
+
+                Grid.DataSource = list;
+            }
+
+
+        }
+
+        public void getLogClient()
+        {
+            using (var connect = new Connect())
+            {
+                var list = (from Client in connect.NameClients
+
+                            join log in connect.Logs on Client.Id equals log.ClientId
+                            join InfoLog in connect.LogInfos on log.LogInfoID equals InfoLog.Id
+                            join stat in connect.StatusProducts on log.StatusProductId equals stat.Id
+                            join user in connect.Users on log.UserId equals user.Id
+                            join usSt in connect.StatusUsers on user.StatusId equals usSt.Id
+
+                            where Client.Id == idClient && log.Module == null && log.ProjectId == null
+
+                            select new { InfoLog.FactDate, InfoLog.Name, H_CYKP_StatusProduct = stat.Name, log.Date,  user.UserName, usSt.Status })
+                   .ToList();
+
+                Grid.DataSource = list;
+            }
+
+
+        }
+
+        public void getLogModule()
+        {
+            using (var connect = new Connect())
+            {
+                var list = (from Module in connect.NameModules
+
+                            join log in connect.Logs on Module.Id equals log.ModuleID
+                            join InfoLog in connect.LogInfos on log.LogInfoID equals InfoLog.Id
+                            join stat in connect.StatusProducts on log.StatusProductId equals stat.Id
+                            join user in connect.Users on log.UserId equals user.Id
+                            join usSt in connect.StatusUsers on user.StatusId equals usSt.Id
+
+                            where Module.Id == idModule
+
+                            select new { InfoLog.FactDate, InfoLog.Name, H_CYKP_StatusProduct = stat.Name, log.Date, InfoLog.Count,  user.UserName, usSt.Status })
                    .ToList();
 
                 Grid.DataSource = list;
