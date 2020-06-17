@@ -36,8 +36,6 @@ namespace CYKP.Код
         public string Stage { get; set; }
         public string Name { get; set; }
 
-
-
         public Grid()
         {
 
@@ -59,7 +57,7 @@ namespace CYKP.Код
 
         }
 
-        void gridStart(ref int Menuid, Control control)
+       public void gridStart(ref int Menuid, Control control)
         {
             var ctrls = new Controls<DataGridView>(control);                      
             var grid = ctrls.list.Where(c => c.Name == "Menu").FirstOrDefault();
@@ -76,8 +74,6 @@ namespace CYKP.Код
             Menuid = 1;
 
             GRSettings(grid, true, false, control);
-
-
         }
 
       
@@ -91,11 +87,9 @@ namespace CYKP.Код
             var ctrlCB = new Controls<ComboBox>(control);
             var GB = new GroupBoxcs(411,12);
 
-
             //var GRID = ПоискОбъекта<DataGridView>(control).Where(v => v.Name == "Menu").FirstOrDefault();
             var GRID = ctrl.list.Where(v => v.Name == "Menu").FirstOrDefault();
-            var lists = ctrlGR.list;
-            
+            var lists = ctrlGR.list;            
 
             switch (GRID.CurrentCell.RowIndex)
             {
@@ -256,7 +250,6 @@ namespace CYKP.Код
                 Grid.Rows[i].Cells[0].Value = list[i];
             var Gridord = gridlist.Where(c => c.Name == Name).FirstOrDefault();
             return Gridord;
-
         }
 
 
@@ -285,9 +278,7 @@ namespace CYKP.Код
         public void GRSettings(DataGridView Grid, GroupBox GR,  bool bl1, bool bl2)
         {
             Grid.Visible = bl1;
-            GR.Visible = bl2;
-          
-         
+            GR.Visible = bl2;         
          
         }
         //настройка меню и группбокса
@@ -296,8 +287,5 @@ namespace CYKP.Код
             GB.Visible = bl;
          
         }
-
-
-
     }
 }

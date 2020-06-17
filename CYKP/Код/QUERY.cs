@@ -7,8 +7,9 @@ using System.Windows.Forms;
 
 namespace CYKP.Код
 {
-    class QUERY
-    {
+    public class QUERY
+    {        
+        
         public int idClient { get; set; }
 
         public int idModule { get; set; }
@@ -577,7 +578,14 @@ namespace CYKP.Код
 
                             where Order.Id == idOrder && log.Module == null
 
-                            select new { InfoLog.FactDate, InfoLog.Name,  H_CYKP_StatusProduct = stat.Name, log.Date, InfoLog.Count, user.UserName, usSt.Status })
+                            select new {
+                              Факт_Дата = InfoLog.FactDate
+                            , Заказ = InfoLog.Name
+                            , Статус  = stat.Name
+                            , Дата = log.Date
+                            , Количество_в_заказе = InfoLog.Count
+                            , Пользователь = user.UserName
+                            , Статус_Пользователя = usSt.Status })
                    .ToList();
 
                 Grid.DataSource = list;
@@ -600,7 +608,12 @@ namespace CYKP.Код
 
                             where Client.Id == idClient && log.Module == null && log.ProjectId == null
 
-                            select new { InfoLog.FactDate, InfoLog.Name, H_CYKP_StatusProduct = stat.Name, log.Date,  user.UserName, usSt.Status })
+                            select new { Фактическая_дата = InfoLog.FactDate
+                                        , Имя_Заказчика = InfoLog.Name
+                                        , Статус = stat.Name
+                                        , Дата = log.Date
+                                        , Пользователь = user.UserName
+                                        , Статус_пользователя = usSt.Status })
                    .ToList();
 
                 Grid.DataSource = list;
@@ -623,7 +636,14 @@ namespace CYKP.Код
 
                             where Module.Id == idModule
 
-                            select new { InfoLog.FactDate, InfoLog.Name, H_CYKP_StatusProduct = stat.Name, log.Date, InfoLog.Count,  user.UserName, usSt.Status })
+                            select new {
+                              Факт_Дата = InfoLog.FactDate
+                            , Имя_Модуля = InfoLog.Name
+                            , Статус = stat.Name
+                            , Дата = log.Date
+                            , Количество_в_модуле = InfoLog.Count
+                            , Пользователь = user.UserName
+                            , Статус_пользователя = usSt.Status })
                    .ToList();
 
                 Grid.DataSource = list;

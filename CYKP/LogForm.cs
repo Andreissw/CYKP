@@ -67,9 +67,7 @@ namespace CYKP
            qu.getLogModule();
 
 
-        }
-
-
+        }        
 
         private void button5_Click(object sender, EventArgs e)
         {

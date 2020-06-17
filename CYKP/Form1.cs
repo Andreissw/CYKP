@@ -25,7 +25,8 @@ namespace CYKP
         static public int MenuId;
         //string FromClient = new string[7] { "ADDFullName","" };
         private void Form1_Load(object sender, EventArgs e)
-        {          
+        {
+                       
             GridInfoClients.Rows.Add(6);
             GridInfoOrders.Rows.Add(4);
             GridInfoModules.Rows.Add(5);
@@ -187,7 +188,10 @@ namespace CYKP
 
         private void BTback_Click_1(object sender, EventArgs e) //Кнопка назать, выход в самое начальное меню
         {
-        
+            var grid = new Grid();
+            grid.gridStart( ref MenuId,this);
+            var GB = new GroupBoxcs();
+            GB.ClearALLGroupBox(this);
 
         }              
     
@@ -443,6 +447,7 @@ namespace CYKP
             var log = new LogForm(gr.Rows[id].Cells[0].Value.ToString());
             log.id = id;
             log.ShowDialog();
+            
         }
 
         private void button4_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказчика)

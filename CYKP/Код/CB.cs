@@ -44,14 +44,7 @@ namespace CYKP.Код
 
         }
 
-       //public void SettingGR(GroupBox GB, Control Parent)
-       // {
-       //     CBVisible(Parent); //Невидимые элементы группбоксов
-       //     Clear(GB); //Чистит поля в группбоксе
-       //     GB.Visible = true; // делает видимы группбокс
-       //     GB.Location = new Point(X, Y); //Позиция группбокса
-       // }
-
+      
         public void GRGet( int x, int y) //Получение интерфейса
         {
             Clear(groupbox);
@@ -71,8 +64,7 @@ namespace CYKP.Код
                     {
                         if (b.GetType() == typeof(Label)) { }
                         else if (b.GetType() == typeof(Button)) { }
-                        else b.Text = ""; 
-                            
+                        else b.Text = "";                             
                         
                     }
                 }
@@ -92,20 +84,13 @@ namespace CYKP.Код
                         {
                             if (c.GetType() == typeof(Label)) { }
                             else if (c.GetType() == typeof(Button)) { }
-                            else c.Text = "";
-                           
+                            else c.Text = "";                           
                         }
                     }
             }
 
         }
-       //public void CBVisible(Control Parent)
-       // {
-       //     foreach (Control c in Parent.Controls) //Делает невидимыми все группбоксы
-       //         if (c.GetType() == typeof(GroupBox))
-       //             c.Visible = false;           
-       // }
-
+     
 
       public void Clear(Control GB)
         {
@@ -114,9 +99,7 @@ namespace CYKP.Код
                 if (c.GetType() == typeof(Label)) { }
                 else if (c.GetType() == typeof(Button)) { }
                 else              
-                    c.Text = "";
-              
-
+                    c.Text = "";           
             }
         }     
 
