@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Статусы пользователей
     class H_CYKP_StatusUser
     {
         public int Id { get; set; }

@@ -37,7 +37,7 @@ namespace CYKP.Код
             switch (Status)
             {
                 case 1: //Вход Администратора
-                    var grid = new Grid(Grid, ref Form1.MenuId,2);
+                    var grid = new Grid(Grid, ref GridListDoc.MenuId,2);
                     LB.Visible = true;
                     LB.Text = Name;
                     grid.GRSettings(Grid,GB,true,false);

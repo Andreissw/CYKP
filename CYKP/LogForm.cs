@@ -39,6 +39,7 @@ namespace CYKP
             //var qu = new QUERY();
             qu = new QUERY();
             qu.Grid = GridLog;
+            qu.FindCleintID();
             var list = new List<Meth>() { ClientLog, OrderLog,ModuleLog};
             list[id]();
 

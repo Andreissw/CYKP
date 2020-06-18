@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+
+    //Сущность таблицы с видами даты
     class H_CYKP_DateTypes
     {
         public int Id { get; set; }

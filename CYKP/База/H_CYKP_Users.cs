@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Таблица пользователей
     class H_CYKP_Users
     {
         public int Id { get; set; }
@@ -24,7 +25,9 @@ namespace CYKP
 
         public virtual ICollection<H_CYKP_Log> Log { get; set; }
 
-      
+        public virtual ICollection<H_CYKP_LogDocuments> LogDocument { get; set; }
+
+
 
 
     }

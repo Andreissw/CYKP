@@ -651,5 +651,62 @@ namespace CYKP.Код
 
 
         }
+
+        delegate H_CYKP_Document SaveMeth();
+
+        public void SaveFile(int i, string path)
+        {
+            using (var con = new Connect())
+            {
+                var list = new List<SaveMeth> { Client, Order, Module };
+                con.Documents.Add(list[i]());
+                con.SaveChanges();
+
+                H_CYKP_Document Client()
+                {
+                    var document = new H_CYKP_Document()
+                    {
+                        NamePath = path,
+
+                        LogDocument = new List<H_CYKP_LogDocuments>()
+                        {
+                            new H_CYKP_LogDocuments {Date = DateTime.Now, UserId = 2, ClientId = idClient, TypeModeid = 1 }
+                        }
+                    };
+                    return document;
+                }
+
+                H_CYKP_Document Order()
+                {
+                    var document = new H_CYKP_Document()
+                    {
+                        NamePath = path,
+
+                        LogDocument = new List<H_CYKP_LogDocuments>()
+                        {
+                            new H_CYKP_LogDocuments {Date = DateTime.Now, UserId = 2,  OrderId = idOrder, TypeModeid = 2 }
+                        }
+                    };
+                    return document;
+                }
+
+                H_CYKP_Document Module()
+                {
+                    var document = new H_CYKP_Document()
+                    {
+                        NamePath = path,
+
+                        LogDocument = new List<H_CYKP_LogDocuments>()
+                        {
+                            new H_CYKP_LogDocuments {Date = DateTime.Now, UserId = 2,  ModuleID = idModule, TypeModeid = 3}
+                        }
+                    };
+                    return document;
+                }
+
+
+
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Сущность таблицы Лога
     class H_CYKP_Log
     {
         public int Id { get; set; }
@@ -27,7 +28,6 @@ namespace CYKP
         public int ?ModuleID { get; set; }
 
         public int ?DateTypeID { get; set; }
-
        
         public int LogInfoID { get; set; }
 

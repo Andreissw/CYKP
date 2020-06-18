@@ -39,7 +39,11 @@ namespace CYKP
 
         public DbSet<H_CYKP_GridMenuName> GridMenuNames { get; set; }
 
-      
+        public DbSet<H_CYKP_LogDocuments> LogDocuments { get; set; }
+
+        public DbSet<H_CYKP_Document> Documents { get; set; }
+
+
 
 
     }

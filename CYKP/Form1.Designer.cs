@@ -1,6 +1,6 @@
 ﻿namespace CYKP
 {
-    partial class Form1
+    partial class GridListDoc
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,6 +38,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TBLogin = new System.Windows.Forms.TextBox();
             this.BTlogin = new System.Windows.Forms.Button();
             this.Menu = new System.Windows.Forms.DataGridView();
@@ -154,6 +155,17 @@
             this.INFBT = new System.Windows.Forms.Button();
             this.CBFindName = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.GBDoc = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.GBListDoc = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label49 = new System.Windows.Forms.Label();
+            this.CBfiDocType = new System.Windows.Forms.ComboBox();
+            this.BTfiDocType = new System.Windows.Forms.Button();
+            this.CBfi = new System.Windows.Forms.ComboBox();
+            this.BTok = new System.Windows.Forms.Button();
+            this.CBFiDoc = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).BeginInit();
             this.GRlogin.SuspendLayout();
             this.GRAddClient.SuspendLayout();
@@ -174,6 +186,9 @@
             this.GRINFOClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridInfoClients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.INFGridOrders)).BeginInit();
+            this.GBDoc.SuspendLayout();
+            this.GBListDoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TBLogin
@@ -209,8 +224,8 @@
             this.Menu.Location = new System.Drawing.Point(14, 11);
             this.Menu.Name = "Menu";
             this.Menu.RowHeadersVisible = false;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Menu.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Menu.RowsDefaultCellStyle = dataGridViewCellStyle27;
             this.Menu.Size = new System.Drawing.Size(393, 292);
             this.Menu.TabIndex = 2;
             this.Menu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Menu_CellClick);
@@ -807,7 +822,7 @@
             this.EdditingGB.Controls.Add(this.label16);
             this.EdditingGB.Controls.Add(this.label1);
             this.EdditingGB.Controls.Add(this.GRIDListClient);
-            this.EdditingGB.Location = new System.Drawing.Point(1389, 12);
+            this.EdditingGB.Location = new System.Drawing.Point(1807, 27);
             this.EdditingGB.Name = "EdditingGB";
             this.EdditingGB.Size = new System.Drawing.Size(1059, 489);
             this.EdditingGB.TabIndex = 8;
@@ -876,8 +891,8 @@
             this.GRIDListModule.Location = new System.Drawing.Point(9, 63);
             this.GRIDListModule.Name = "GRIDListModule";
             this.GRIDListModule.RowHeadersVisible = false;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListModule.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListModule.RowsDefaultCellStyle = dataGridViewCellStyle28;
             this.GRIDListModule.Size = new System.Drawing.Size(325, 386);
             this.GRIDListModule.TabIndex = 3;
             this.GRIDListModule.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListModule_CellClick);
@@ -953,8 +968,8 @@
             this.GRIDListOrder.Location = new System.Drawing.Point(9, 63);
             this.GRIDListOrder.Name = "GRIDListOrder";
             this.GRIDListOrder.RowHeadersVisible = false;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListOrder.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListOrder.RowsDefaultCellStyle = dataGridViewCellStyle29;
             this.GRIDListOrder.Size = new System.Drawing.Size(325, 386);
             this.GRIDListOrder.TabIndex = 3;
             this.GRIDListOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListOrder_CellClick);
@@ -1026,8 +1041,8 @@
             this.GRIDListClient.Location = new System.Drawing.Point(6, 72);
             this.GRIDListClient.Name = "GRIDListClient";
             this.GRIDListClient.RowHeadersVisible = false;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListClient.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDListClient.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.GRIDListClient.Size = new System.Drawing.Size(330, 386);
             this.GRIDListClient.TabIndex = 3;
             this.GRIDListClient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRIDListClient_CellClick);
@@ -1042,9 +1057,9 @@
             this.GROtchet.Controls.Add(this.INFBT);
             this.GROtchet.Controls.Add(this.CBFindName);
             this.GROtchet.Controls.Add(this.label18);
-            this.GROtchet.Location = new System.Drawing.Point(413, 12);
+            this.GROtchet.Location = new System.Drawing.Point(1185, 389);
             this.GROtchet.Name = "GROtchet";
-            this.GROtchet.Size = new System.Drawing.Size(916, 489);
+            this.GROtchet.Size = new System.Drawing.Size(587, 111);
             this.GROtchet.TabIndex = 9;
             this.GROtchet.TabStop = false;
             this.GROtchet.Text = "Отчет";
@@ -1090,26 +1105,26 @@
             this.GridInfoModules.ColumnHeadersVisible = false;
             this.GridInfoModules.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle31;
             this.GridInfoModules.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoModules.Location = new System.Drawing.Point(125, 31);
             this.GridInfoModules.Name = "GridInfoModules";
             this.GridInfoModules.ReadOnly = true;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.GridInfoModules.RowHeadersVisible = false;
             this.GridInfoModules.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoModules.RowTemplate.Height = 10;
@@ -1230,26 +1245,26 @@
             this.GridInfoOrders.ColumnHeadersVisible = false;
             this.GridInfoOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle33;
             this.GridInfoOrders.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoOrders.Location = new System.Drawing.Point(176, 38);
             this.GridInfoOrders.Name = "GridInfoOrders";
             this.GridInfoOrders.ReadOnly = true;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.GridInfoOrders.RowHeadersVisible = false;
             this.GridInfoOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoOrders.RowTemplate.Height = 10;
@@ -1297,8 +1312,8 @@
             this.INFGridModules.Location = new System.Drawing.Point(537, 38);
             this.INFGridModules.Name = "INFGridModules";
             this.INFGridModules.RowHeadersVisible = false;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle35;
             this.INFGridModules.Size = new System.Drawing.Size(270, 290);
             this.INFGridModules.TabIndex = 16;
             // 
@@ -1411,26 +1426,26 @@
             this.GridInfoClients.ColumnHeadersVisible = false;
             this.GridInfoClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle36;
             this.GridInfoClients.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoClients.Location = new System.Drawing.Point(176, 38);
             this.GridInfoClients.Name = "GridInfoClients";
             this.GridInfoClients.ReadOnly = true;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle37;
             this.GridInfoClients.RowHeadersVisible = false;
             this.GridInfoClients.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoClients.RowTemplate.Height = 10;
@@ -1478,8 +1493,8 @@
             this.INFGridOrders.Location = new System.Drawing.Point(537, 38);
             this.INFGridOrders.Name = "INFGridOrders";
             this.INFGridOrders.RowHeadersVisible = false;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle38;
             this.INFGridOrders.Size = new System.Drawing.Size(270, 290);
             this.INFGridOrders.TabIndex = 16;
             // 
@@ -1635,12 +1650,161 @@
             this.label18.TabIndex = 13;
             this.label18.Text = "Поиск по";
             // 
-            // Form1
+            // GBDoc
+            // 
+            this.GBDoc.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.GBDoc.Controls.Add(this.button2);
+            this.GBDoc.Controls.Add(this.GBListDoc);
+            this.GBDoc.Controls.Add(this.CBfi);
+            this.GBDoc.Controls.Add(this.BTok);
+            this.GBDoc.Controls.Add(this.CBFiDoc);
+            this.GBDoc.Controls.Add(this.label50);
+            this.GBDoc.Location = new System.Drawing.Point(413, 8);
+            this.GBDoc.Name = "GBDoc";
+            this.GBDoc.Size = new System.Drawing.Size(613, 543);
+            this.GBDoc.TabIndex = 1002;
+            this.GBDoc.TabStop = false;
+            this.GBDoc.Text = "Документы";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(6, 46);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 23);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Добавить";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // GBListDoc
+            // 
+            this.GBListDoc.Controls.Add(this.dataGridView1);
+            this.GBListDoc.Controls.Add(this.label49);
+            this.GBListDoc.Controls.Add(this.CBfiDocType);
+            this.GBListDoc.Controls.Add(this.BTfiDocType);
+            this.GBListDoc.Location = new System.Drawing.Point(6, 100);
+            this.GBListDoc.Name = "GBListDoc";
+            this.GBListDoc.Size = new System.Drawing.Size(557, 437);
+            this.GBListDoc.TabIndex = 21;
+            this.GBListDoc.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 60);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            this.dataGridView1.Size = new System.Drawing.Size(393, 367);
+            this.dataGridView1.TabIndex = 24;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 10);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(121, 13);
+            this.label49.TabIndex = 23;
+            this.label49.Text = "Поиск по расширению";
+            this.label49.Visible = false;
+            // 
+            // CBfiDocType
+            // 
+            this.CBfiDocType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBfiDocType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBfiDocType.BackColor = System.Drawing.Color.White;
+            this.CBfiDocType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBfiDocType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBfiDocType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBfiDocType.FormattingEnabled = true;
+            this.CBfiDocType.Location = new System.Drawing.Point(6, 26);
+            this.CBfiDocType.Name = "CBfiDocType";
+            this.CBfiDocType.Size = new System.Drawing.Size(121, 23);
+            this.CBfiDocType.TabIndex = 22;
+            // 
+            // BTfiDocType
+            // 
+            this.BTfiDocType.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTfiDocType.FlatAppearance.BorderSize = 0;
+            this.BTfiDocType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTfiDocType.Location = new System.Drawing.Point(133, 26);
+            this.BTfiDocType.Name = "BTfiDocType";
+            this.BTfiDocType.Size = new System.Drawing.Size(60, 23);
+            this.BTfiDocType.TabIndex = 21;
+            this.BTfiDocType.Text = "OK";
+            this.BTfiDocType.UseVisualStyleBackColor = false;
+            // 
+            // CBfi
+            // 
+            this.CBfi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBfi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBfi.BackColor = System.Drawing.Color.White;
+            this.CBfi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBfi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBfi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBfi.FormattingEnabled = true;
+            this.CBfi.Items.AddRange(new object[] {
+            "Заказчик",
+            "Заказ",
+            "Модуль"});
+            this.CBfi.Location = new System.Drawing.Point(79, 21);
+            this.CBfi.Name = "CBfi";
+            this.CBfi.Size = new System.Drawing.Size(195, 23);
+            this.CBfi.TabIndex = 20;
+            this.CBfi.TextChanged += new System.EventHandler(this.CBfi_TextChanged);
+            // 
+            // BTok
+            // 
+            this.BTok.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTok.FlatAppearance.BorderSize = 0;
+            this.BTok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTok.Location = new System.Drawing.Point(480, 21);
+            this.BTok.Name = "BTok";
+            this.BTok.Size = new System.Drawing.Size(60, 23);
+            this.BTok.TabIndex = 19;
+            this.BTok.Text = "OK";
+            this.BTok.UseVisualStyleBackColor = false;
+            // 
+            // CBFiDoc
+            // 
+            this.CBFiDoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBFiDoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBFiDoc.BackColor = System.Drawing.Color.White;
+            this.CBFiDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBFiDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBFiDoc.FormattingEnabled = true;
+            this.CBFiDoc.Items.AddRange(new object[] {
+            " "});
+            this.CBFiDoc.Location = new System.Drawing.Point(281, 21);
+            this.CBFiDoc.Name = "CBFiDoc";
+            this.CBFiDoc.Size = new System.Drawing.Size(193, 23);
+            this.CBFiDoc.TabIndex = 18;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label50.Location = new System.Drawing.Point(6, 24);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(70, 16);
+            this.label50.TabIndex = 17;
+            this.label50.Text = "Поиск по";
+            // 
+            // GridListDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1846, 883);
+            this.Controls.Add(this.GBDoc);
             this.Controls.Add(this.GROtchet);
             this.Controls.Add(this.EdditingGB);
             this.Controls.Add(this.GRAddOrder);
@@ -1649,7 +1813,7 @@
             this.Controls.Add(this.LBName);
             this.Controls.Add(this.GRlogin);
             this.Controls.Add(this.Menu);
-            this.Name = "Form1";
+            this.Name = "GridListDoc";
             this.Text = "CYKP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1684,6 +1848,11 @@
             this.GRINFOClient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridInfoClients)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.INFGridOrders)).EndInit();
+            this.GBDoc.ResumeLayout(false);
+            this.GBDoc.PerformLayout();
+            this.GBListDoc.ResumeLayout(false);
+            this.GBListDoc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1805,6 +1974,17 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.GroupBox GBDoc;
+        private System.Windows.Forms.GroupBox GBListDoc;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ComboBox CBfiDocType;
+        private System.Windows.Forms.Button BTfiDocType;
+        private System.Windows.Forms.ComboBox CBfi;
+        private System.Windows.Forms.Button BTok;
+        private System.Windows.Forms.ComboBox CBFiDoc;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Button button2;
     }
 }
 

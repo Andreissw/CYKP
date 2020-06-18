@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Таблица со статусами Заказчиков/Заказов/Модулей
     class H_CYKP_StatusProduct
     {
 

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Таблица с Заказами
     class H_CYKP_Name_Project
     {
         public H_CYKP_Name_Project()
@@ -28,7 +29,10 @@ namespace CYKP
         public virtual ICollection<H_CYKP_NameModule> NameModule { get; set; }
     
         public virtual ICollection<H_CYKP_Log> Log { get; set; }
-      
+
+        public virtual ICollection<H_CYKP_LogDocuments> LogDocument { get; set; }
+
+
 
     }
 }

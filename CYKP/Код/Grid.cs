@@ -46,7 +46,7 @@ namespace CYKP.Код
 
             using (var Connect = new Connect())
             {
-                var countries = from c in Connect.GridMenus.Where(c => c.MenuNameId == id)
+                var countries = from c in Connect.GridMenus.Where(c => c.MenuNameId == id).OrderBy(b=>b.row)
                                 select new { c.Name };
 
                 Grid.DataSource = countries.ToList();
@@ -137,11 +137,17 @@ namespace CYKP.Код
                     GB.GroupBox = lists.Where(c => c.Name == "GROtchet").FirstOrDefault();
                     GB.ClearALLGroupBox(GB.GroupBox);
                     GB.RefreshGB(control);
+                    GB.GroupBox.Size = new Size(881, 489);
                     
                     break;
 
-                case 5://Назад
-                    gridStart(ref Form1.MenuId, control);
+                case 5://Документы
+
+                    
+                    break;
+
+                case 6://Назад
+                    gridStart(ref GridListDoc.MenuId, control);
                     GB.ClearALLGroupBox(control);
                     break;
             }
@@ -150,7 +156,7 @@ namespace CYKP.Код
 
         }
         
-        void IMenu.CellClickGrid(Control control)// Нажатие на строки в StartMenu
+        void IMenu.CellClickGrid(Control control)// Нажатие на строки Начального меню
         {
             var ctrl = new Controls<DataGridView>(control);
             var ctrlGB = new Controls<GroupBox>(control);
@@ -174,6 +180,7 @@ namespace CYKP.Код
                     GB.Points(411, 12);
                     GB.RefreshGB(control);
                     GB.ClearALLGroupBox(GB.GroupBox);
+                    GB.GroupBox.Size = new Size(881, 489);
                     break;
 
                 case 2://Выход

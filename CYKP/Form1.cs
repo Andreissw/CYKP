@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,19 +12,16 @@ using System.Windows.Forms;
 
 namespace CYKP
 {
-    public partial class Form1 : Form
+    public partial class GridListDoc : Form
     {
-        public Form1()
+        public GridListDoc()
         {
             InitializeComponent();
-        }
-        class DataItem
-        {
-            public string Name { get; set; }
-        }
+        }     
 
+        string path, namePath; //Путь сохранение файла
         static public int MenuId;
-        //string FromClient = new string[7] { "ADDFullName","" };
+        
         private void Form1_Load(object sender, EventArgs e)
         {
                        
@@ -353,24 +351,16 @@ namespace CYKP
 
         private void CBFind_TextChanged(object sender, EventArgs e)
         {
-            if (CBFind.Text == "")
-                return;
-            var cb = new CB();
-            IComboItem icomb = cb;
-
-            switch (CBFind.Text)
-            {
-                case ("Заказчик"):
-                    cb.ComboBoxItemClient(CBFindName);
-                    break;
-                case ("Заказ"):
-                    icomb.ComboBoxItemOrder(CBFindName);
-                    break;
-                case ("Модуль"):
-                    icomb.ComboBoxItemModule(CBFindName);
-                    break;
-            }
+            var CB = new CB();
+            CB.CombAddMethod(CBFind, CBFindName);        
         }
+
+        private void CBfi_TextChanged(object sender, EventArgs e)
+        {
+            var CB = new CB();
+            CB.CombAddMethod(CBfi, CBFiDoc);
+        }
+
 
         private void button2_Click(object sender, EventArgs e)//Кнопка - Запрос в базу на вывод информации
         {
@@ -459,5 +449,57 @@ namespace CYKP
         private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
         {CloseBT(); }
 
+       
+
+        private void button2_Click_1(object sender, EventArgs e) // ТЕСТ КНОПКА
+        {
+            //MessageBox.Show(.ToString());
+
+            using (var OF = new OpenFileDialog())
+            {
+                OF.Filter = "All files (*.*)|*.*";
+
+                OF.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+
+                if (OF.ShowDialog() == DialogResult.Cancel)
+                    return;
+                else
+                {
+                    path = OF.FileName;
+                    namePath = OF.SafeFileName;
+                }
+
+            };
+
+            var line = @"\\gusev.int\fs\cts\ДСНТ\Отчеты\Служба качества\Отчеты по качеству\Отчет по качеству\CYKPDoc\" + namePath;
+            if (File.Exists(line))
+            { 
+                var mes = MessageBox.Show($"Файл {namePath} уже существует, хотите его перезаписать?", "", MessageBoxButtons.YesNo);
+                if (mes == DialogResult.No)
+                    return;
+                
+            }
+           
+
+            File.Copy(path, line,true);
+            if (File.Exists(line))
+            {
+                var qu = new QUERY();
+                qu.UserID = Userid;
+                qu.NameClient = CBFiDoc.Text;
+                qu.NameOrder = CBFiDoc.Text;
+                qu.NameOrder = CBFiDoc.Text;
+                qu.FindCleintID();
+                qu.FindModuleID();
+                qu.FindOrderID();
+                qu.SaveFile(CBfi.Items.IndexOf(CBfi.Text), line);
+            }
+            else
+                MessageBox.Show("Произошла ошабика, файл не сохранен");
+
+
+
+        }
     }
 }

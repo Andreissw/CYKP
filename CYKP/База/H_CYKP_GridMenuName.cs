@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP.База
 {
+    //Сущность таблицы типов меню
     class H_CYKP_GridMenuName
     {
 

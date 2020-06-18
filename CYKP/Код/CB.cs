@@ -179,5 +179,26 @@ namespace CYKP.Код
                 CB.Text = "";
             }
         }
+
+      public  void CombAddMethod(ComboBox CB, ComboBox CB2)
+        {
+            if (CB.Text == "")
+                return;
+            var cb = new CB();
+            IComboItem icomb = cb;
+
+            switch (CB.Text)
+            {
+                case ("Заказчик"):
+                    cb.ComboBoxItemClient(CB2);
+                    break;
+                case ("Заказ"):
+                    icomb.ComboBoxItemOrder(CB2);
+                    break;
+                case ("Модуль"):
+                    icomb.ComboBoxItemModule(CB2);
+                    break;
+            }
+        }
     }
 }

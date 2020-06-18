@@ -142,11 +142,25 @@
     <Compile Include="Migrations\202004201732079_CYKP17.designer.cs">
       <DependentUpon>202004201732079_CYKP17.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006170752365_CYKP18.cs" />
+    <Compile Include="Migrations\202006170752365_CYKP18.designer.cs">
+      <DependentUpon>202006170752365_CYKP18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006170921464_CYKP19.cs" />
+    <Compile Include="Migrations\202006170921464_CYKP19.designer.cs">
+      <DependentUpon>202006170921464_CYKP19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006180744548_CYKP20.cs" />
+    <Compile Include="Migrations\202006180744548_CYKP20.designer.cs">
+      <DependentUpon>202006180744548_CYKP20.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="База\H_CYKP_DateTypes.cs" />
+    <Compile Include="База\H_CYKP_Document.cs" />
     <Compile Include="База\H_CYKP_GridMenu.cs" />
     <Compile Include="База\H_CYKP_GridMenuName.cs" />
     <Compile Include="База\H_CYKP_Log.cs" />
+    <Compile Include="База\H_CYKP_LogDocuments.cs" />
     <Compile Include="База\H_CYKP_LogInfo.cs" />
     <Compile Include="База\H_CYKP_NameModule.cs" />
     <Compile Include="База\H_CYKP_Name_Client.cs" />
@@ -222,6 +236,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004201732079_CYKP17.resx">
       <DependentUpon>202004201732079_CYKP17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006170752365_CYKP18.resx">
+      <DependentUpon>202006170752365_CYKP18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006170921464_CYKP19.resx">
+      <DependentUpon>202006170921464_CYKP19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006180744548_CYKP20.resx">
+      <DependentUpon>202006180744548_CYKP20.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

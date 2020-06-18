@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CYKP
 {
+    //Таблица типов Заказчик/Заказ/Модуль
     class H_CYKP_TypeMode
     {
         public int Id { get; set; }
@@ -20,6 +21,8 @@ namespace CYKP
         public virtual ICollection<H_CYKP_DateTypes> DateType { get; set; }
      
         public virtual ICollection<H_CYKP_Log> Log { get; set; }
+
+        public virtual ICollection<H_CYKP_LogDocuments> LogDocument { get; set; }
 
     }
 }
