@@ -17,7 +17,10 @@ namespace CYKP
         public GridListDoc()
         {
             InitializeComponent();
-        }     
+            //Событие на добавление документа
+            BTSaveDoc.Click += (a, e) => { if (CBFiDoc.Text == "") return; var doc = new Document(CBFiDoc.Text);
+                doc.id = CBfi.Items.IndexOf(CBfi.Text); doc.OpenDialog(); };
+        }
 
         string path, namePath; //Путь сохранение файла
         static public int MenuId;
@@ -76,9 +79,9 @@ namespace CYKP
             var CB = new CB();
             var QR = CB;
             IComboItemid IComb = QR;
-            QR.NameClient = GRIDListClient.CurrentCell.Value.ToString();
+            QR.Name = GRIDListClient.CurrentCell.Value.ToString();
 
-            idClient = QR.FindCleintID(); // Поиск ID номера клиента
+            idClient = QR.FindClientID(); // Поиск ID номера клиента
             var list = QR.GetInfoClient(); //Добавление в массив инфо о текущем клиенте
 
             if (list.Count == 0) //Защита, если инфо нет, код обрывается
@@ -111,10 +114,11 @@ namespace CYKP
             IComboItemid IComb = QR;
 
            
-            QR.NameOrder = GRIDListOrder.CurrentCell.Value.ToString();
+            QR.Name = GRIDListOrder.CurrentCell.Value.ToString();
+            QR.FindOrderID();
             QR.idClient = idClient;
 
-            QR.FindOrderID();
+            
             iDorder = QR.idOrder;
 
             var list = QR.GetInfoOrder();
@@ -143,7 +147,7 @@ namespace CYKP
             var CB = new CB();
             var QR = CB;  
 
-            QR.NameModule = GRIDListModule.CurrentCell.Value.ToString();
+            QR.Name = GRIDListModule.CurrentCell.Value.ToString();
             QR.idClient = idClient;
             var list = QR.GetInfoModule();
             if (list.Count == 0)
@@ -254,8 +258,8 @@ namespace CYKP
             {
                 case 3:// Редактирование
                     qu.UserID = Userid;
-                    qu.NameClient = GRIDListClient.CurrentCell.Value.ToString();
-                    qu.FindCleintID();
+                    qu.Name = GRIDListClient.CurrentCell.Value.ToString();
+                    qu.FindClientID();
                     qu.updateClient(GRAddClient);
                     break;
 
@@ -279,11 +283,11 @@ namespace CYKP
             {
                 case 3:
                     qu.UserID = Userid;
-                    qu.NameOrder = GRIDListOrder.CurrentCell.Value.ToString();
+                    qu.Name = GRIDListOrder.CurrentCell.Value.ToString();
                     qu.FindOrderID();
 
-                    qu.NameClient = GRIDListClient.CurrentCell.Value.ToString();
-                    qu.FindCleintID();
+                    qu.Name = GRIDListClient.CurrentCell.Value.ToString();
+                    qu.FindClientID(); 
 
                     qu.updateOrder(GRAddOrder);
                     break;
@@ -307,13 +311,13 @@ namespace CYKP
             {
                 case 3:
                     qu.UserID = Userid;
-                    qu.NameOrder = GRIDListOrder.CurrentCell.Value.ToString();
+                    qu.Name = GRIDListOrder.CurrentCell.Value.ToString();
                     qu.FindOrderID();
 
-                    qu.NameClient = GRIDListClient.CurrentCell.Value.ToString();
-                    qu.FindCleintID();
+                    qu.Name = GRIDListClient.CurrentCell.Value.ToString();
+                    qu.FindClientID();
 
-                    qu.NameModule = GRIDListModule.CurrentCell.Value.ToString();
+                    qu.Name = GRIDListModule.CurrentCell.Value.ToString();
                     qu.FindModuleID();
 
                     qu.UpdateModule(AddModule);
@@ -382,8 +386,8 @@ namespace CYKP
                 var CB = new CB();
                 QUERY QU = CB; //upcast
                 IComboItemid icomb = CB;
-                QU.NameClient = ADDCBClentInModule.Text;
-                QU.FindCleintID();//Определяет какие заказы какого заказчика ему открыть в списке                
+                QU.Name = ADDCBClentInModule.Text;
+                QU.FindClientID(); //Определяет какие заказы какого заказчика ему открыть в списке                
                 icomb.ComboBoxItemOrder(ADDCBOrderinModule);
 
             }
@@ -436,70 +440,17 @@ namespace CYKP
         {   
             var log = new LogForm(gr.Rows[id].Cells[0].Value.ToString());
             log.id = id;
-            log.ShowDialog();
-            
+            log.ShowDialog();            
         }
 
         private void button4_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказчика)
         {CloseBT(); }
 
         private void button5_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказа)
-        {CloseBT(); }
+        {CloseBT(); }      
 
         private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
         {CloseBT(); }
 
-       
-
-        private void button2_Click_1(object sender, EventArgs e) // ТЕСТ КНОПКА
-        {
-            //MessageBox.Show(.ToString());
-
-            using (var OF = new OpenFileDialog())
-            {
-                OF.Filter = "All files (*.*)|*.*";
-
-                OF.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
-
-                if (OF.ShowDialog() == DialogResult.Cancel)
-                    return;
-                else
-                {
-                    path = OF.FileName;
-                    namePath = OF.SafeFileName;
-                }
-
-            };
-
-            var line = @"\\gusev.int\fs\cts\ДСНТ\Отчеты\Служба качества\Отчеты по качеству\Отчет по качеству\CYKPDoc\" + namePath;
-            if (File.Exists(line))
-            { 
-                var mes = MessageBox.Show($"Файл {namePath} уже существует, хотите его перезаписать?", "", MessageBoxButtons.YesNo);
-                if (mes == DialogResult.No)
-                    return;
-                
-            }
-           
-
-            File.Copy(path, line,true);
-            if (File.Exists(line))
-            {
-                var qu = new QUERY();
-                qu.UserID = Userid;
-                qu.NameClient = CBFiDoc.Text;
-                qu.NameOrder = CBFiDoc.Text;
-                qu.NameOrder = CBFiDoc.Text;
-                qu.FindCleintID();
-                qu.FindModuleID();
-                qu.FindOrderID();
-                qu.SaveFile(CBfi.Items.IndexOf(CBfi.Text), line);
-            }
-            else
-                MessageBox.Show("Произошла ошабика, файл не сохранен");
-
-
-
-        }
     }
 }

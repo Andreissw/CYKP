@@ -173,6 +173,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Код\CB.cs" />
     <Compile Include="Код\Controls.cs" />
+    <Compile Include="Код\Document.cs" />
     <Compile Include="Код\Grid.cs" />
     <Compile Include="Код\GroupBoxcs.cs" />
     <Compile Include="Код\Loggin.cs" />

@@ -11,10 +11,7 @@ using System.Windows.Forms;
 
 namespace CYKP
 {
-    interface Iorder
-    {
-
-    }
+    
     public partial class LogForm : Form
     {
         public LogForm(string name)
@@ -37,34 +34,29 @@ namespace CYKP
         private void LogMethod()
         {
             //var qu = new QUERY();
-            qu = new QUERY();
+            qu = new QUERY(Name);
             qu.Grid = GridLog;
-            qu.FindCleintID();
+            qu.FindClientID();
             var list = new List<Meth>() { ClientLog, OrderLog,ModuleLog};
             list[id]();
-
 
         }
 
         void ClientLog()
         {
-            qu.NameClient = Name;
-            qu.FindCleintID();
+            
             qu.getLogClient();
         }
 
         void OrderLog()
         {          
-            qu.NameOrder = Name;
-            qu.FindOrderID();
+           
             qu.getLogOrder();
         }
 
         void ModuleLog()
         {
-            
-            qu.NameModule = Name;
-            qu.FindModuleID();
+                       
            qu.getLogModule();
 
 

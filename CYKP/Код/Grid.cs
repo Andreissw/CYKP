@@ -34,7 +34,7 @@ namespace CYKP.Код
         GroupBoxcs GB { get; set; }
         Controls<GroupBox> ctrl { get; set; }
         public string Stage { get; set; }
-        public string Name { get; set; }
+        
 
         public Grid()
         {
@@ -142,8 +142,12 @@ namespace CYKP.Код
                     break;
 
                 case 5://Документы
+                    Cb.CloseCombo(control);
+                    GB.GroupBox = lists.Where(c => c.Name == "GBDoc").FirstOrDefault();
+                    GB.ClearALLGroupBox(GB.GroupBox);
+                    GB.RefreshGB(control);
+                    GB.GroupBox.Size = new Size(613, 543);
 
-                    
                     break;
 
                 case 6://Назад
@@ -218,8 +222,8 @@ namespace CYKP.Код
          void InClient()
         {
             Definitions("GRINFOClient");
-            NameClient = Name;
-            FindCleintID();
+            Name = Name;
+            FindClientID();
             list = GetInfoClient();
             ListOrder(Definitions2("GridInfoClients", "INFGridOrders"));
         }
@@ -227,7 +231,7 @@ namespace CYKP.Код
          void InfOrder()
         {
             Definitions("GRINFOorder");
-            NameOrder = Name;
+            Name = Name;
             FindOrderID();
             list = GetInfoOrder();
             ListModule(Definitions2("GridInfoOrders", "INFGridModules"));
@@ -236,7 +240,7 @@ namespace CYKP.Код
          void INFModule()
         {
             Definitions("GRINFOModule");
-            NameModule = Name;
+            Name = Name;
             FindModuleID();
             list = GetInfoModule();
             Definitions2("GridInfoModules", "INFGridModules");            

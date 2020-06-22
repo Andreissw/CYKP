@@ -8,19 +8,23 @@ using System.Windows.Forms;
 namespace CYKP.Код
 {
     public class QUERY
-    {        
-        
+    {
+
+        public int id { get; set; }
+
+        public string Name { get; set; }
+
         public int idClient { get; set; }
 
         public int idModule { get; set; }
 
         public int idOrder { get; set; }
 
-        public string NameClient { get; set; }
+        //public string NameClient { get; set; }
 
-        public string NameModule { get; set; }
+        //public string NameModule { get; set; }
 
-        public string NameOrder { get; set; }
+        //public string NameOrder { get; set; }
 
         public int statusid { get; set; }
 
@@ -44,11 +48,16 @@ namespace CYKP.Код
             update = Up_Ins;
         }
 
-        public int FindCleintID() //Поиск id номера по имени
+        public QUERY(string Name)
+        {
+            this.Name = Name;
+        }
+
+        public int FindClientID() //Поиск id номера по имени
         {
             using (var Connect = new Connect())
             {
-                var id = Connect.NameClients.Where(b => b.Name == NameClient).Select(c => c.Id).FirstOrDefault();
+                var id = Connect.NameClients.Where(b => b.Name == Name).Select(c => c.Id).FirstOrDefault();
                 this.idClient = id;
                 return id;
 
@@ -60,7 +69,7 @@ namespace CYKP.Код
         {
             using (var Connect = new Connect())
             {
-                var id = Connect.NameModules.Where(b => b.NameModule == NameModule).Select(c => c.Id).FirstOrDefault();
+                var id = Connect.NameModules.Where(b => b.NameModule == Name).Select(c => c.Id).FirstOrDefault();
                 this.idModule = id;
                 return id;
 
@@ -206,7 +215,7 @@ namespace CYKP.Код
         {
             using (var Connect = new Connect())
             {
-                var id = Connect.NameProjects.Where(b => b.NameProject == NameOrder).Select(c => c.Id).FirstOrDefault();
+                var id = Connect.NameProjects.Where(b => b.NameProject == Name).Select(c => c.Id).FirstOrDefault();
                 this.idOrder = id;
                 return id;
             }
@@ -283,10 +292,10 @@ namespace CYKP.Код
         public void addOrder(GroupBox control)
         {
             List<Control> list = ListMethod(control);
-            NameClient = Поиск("ADDCBClientInOrder", list);
+            Name = Поиск("ADDCBClientInOrder", list);
 
             FindStatus(Поиск("ADDprjStatus", list));
-            FindCleintID();
+            FindClientID();
             using (var con = new Connect())
             {
                 var LogInfo = new H_CYKP_LogInfo()
@@ -325,12 +334,14 @@ namespace CYKP.Код
         public void addModule(GroupBox control)
         {
             List<Control> list = ListMethod(control);
-            NameClient = Поиск("ADDCBClentInModule", list);
-            NameOrder = Поиск("ADDCBOrderinModule", list);
+            Name = Поиск("ADDCBClentInModule", list);
+            FindClientID();
+            Name = Поиск("ADDCBOrderinModule", list);
+            FindOrderID();
 
             FindStatus(Поиск("ADDStatusModule", list));
-            FindCleintID();
-            FindOrderID();
+            
+            
             using (var con = new Connect())
 
             {
@@ -423,7 +434,7 @@ namespace CYKP.Код
                             join Client in connect.NameClients on order.ClientId equals Client.Id
                             where
                             //log.ClientId == idClient &&
-                            order.NameProject == NameOrder && log.TypeModeid == 2 && log.DateTypeID == 1
+                            order.NameProject == Name && log.TypeModeid == 2 && log.DateTypeID == 1
                             select new { H_CYKP_Name_Client = Client, H_CYKP_Log = log, H_CYKP_Name_Project = order, H_CYKP_StatusProduct = stat })
 
                     .ToList();
@@ -453,7 +464,7 @@ namespace CYKP.Код
                             join client in connect.NameClients on order.ClientId equals client.Id
                             where
                             //log.ClientId == idClient && log.ProjectId == idOrder &&
-                            Module.NameModule == NameModule && log.TypeModeid == 3 && log.DateTypeID == 1
+                            Module.NameModule == Name && log.TypeModeid == 3 && log.DateTypeID == 1
                             select new { H_CYKP_Name_Client = client, H_CYKP_Name_Project = order, H_CYKP_Log = log, H_CYKP_NameModule = Module, H_CYKP_StatusProduct = stat })
                    .ToList();
 
@@ -501,7 +512,7 @@ namespace CYKP.Код
             }
 
             var Qr = new QUERY();
-            this.idClient = Qr.FindCleintID();
+            this.idClient = Qr.FindClientID();
         }
 
         public void ListOrder(DataGridView Grid) //Вывод списка всех заказчиков
@@ -566,6 +577,7 @@ namespace CYKP.Код
 
         public void getLogOrder()
         {
+            FindOrderID();
             using (var connect = new Connect())
             {
                 var list = (from Order in connect.NameProjects
@@ -596,6 +608,7 @@ namespace CYKP.Код
 
         public void getLogClient()
         {
+            FindClientID();
             using (var connect = new Connect())
             {
                 var list = (from Client in connect.NameClients
@@ -624,6 +637,7 @@ namespace CYKP.Код
 
         public void getLogModule()
         {
+            FindModuleID();
             using (var connect = new Connect())
             {
                 var list = (from Module in connect.NameModules
@@ -664,6 +678,8 @@ namespace CYKP.Код
 
                 H_CYKP_Document Client()
                 {
+                    FindClientID();
+
                     var document = new H_CYKP_Document()
                     {
                         NamePath = path,
@@ -678,6 +694,7 @@ namespace CYKP.Код
 
                 H_CYKP_Document Order()
                 {
+                    FindOrderID();
                     var document = new H_CYKP_Document()
                     {
                         NamePath = path,
@@ -692,6 +709,7 @@ namespace CYKP.Код
 
                 H_CYKP_Document Module()
                 {
+                    FindModuleID();
                     var document = new H_CYKP_Document()
                     {
                         NamePath = path,
