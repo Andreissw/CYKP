@@ -249,6 +249,15 @@ namespace CYKP.Код
        void Definitions(string nameGB)
         {
             GB.GroupBox = GRBlist.Where(c => c.Name == nameGB).FirstOrDefault();
+
+            //.Where(c => c.Name.StartsWith("INF")).FirstOrDefault();
+            foreach (DataGridView item in GB.GroupBox.Controls.OfType<DataGridView>())
+            {
+                if (item.Name.StartsWith("INF"))
+                    item.CurrentCell = null;
+            }
+                    
+            //var l = GB.GroupBox
             GB.RefreshGB(GB.GroupBox);
            
         }

@@ -80,12 +80,19 @@ namespace CYKP.Код
             GB.Location = new Point(X, Y);
         }
 
+        public void Size(Control GB)
+        {
+            GB.Size = new Size(694, 295);
+        }
+
         public void RefreshGB(Control controls)
         {
             ClearALLGroupBox(controls);
             ClearText(GroupBox);
             GetGB(GroupBox);
             LocationGB(GroupBox);
+            Size(GroupBox);
+
         }
 
         

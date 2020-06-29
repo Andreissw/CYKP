@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -405,7 +406,7 @@ namespace CYKP
 
         private void InfMethod(DataGridView grid, string name)
         {
-            if (grid.CurrentCell.Selected == false)
+            if (grid.CurrentCell == null)
                 return;
             MethodInfo(name, grid);
             grid.ClearSelection();
@@ -447,10 +448,56 @@ namespace CYKP
         {CloseBT(); }
 
         private void button5_Click(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление заказа)
-        {CloseBT(); }      
+        {CloseBT(); }
+        
 
         private void button1_Click_1(object sender, EventArgs e) //Кнопка закрыть  - интерфейс в меню настроек (добавление модуля)
         {CloseBT(); }
+
+     
+
+        private void BTok_Click(object sender, EventArgs e)
+        {
+            using (var con = new Connect())
+            {
+                var grid = (from log in con.LogDocuments
+                            join doc in con.Documents on log.Documentid equals doc.Id
+                            select new { g = doc.NamePath }).ToList();
+
+                foreach (var item in grid)
+                {
+                    GridDocument.Rows.Add();
+                    int i = item.g.LastIndexOf('\\');
+                    int k = grid.IndexOf(item);
+                    GridDocument.Rows[k].Cells[0].Value = item.g.Substring(i + 1);
+                    //MessageBox.Show();
+                }
+                GBListDoc.Visible = true;
+                //GridDocument.DataSource = grid.ToList();
+                ////MessageBox.Show(grid.ToString());
+            }
+        }
+
+        private void BTLoadDocument_Click(object sender, EventArgs e)
+        {
+            var i = GridDocument.CurrentRow.Index;
+            var s = GridDocument.Rows[i].Cells[0].Value.ToString();
+
+            using (var con = new Connect())
+            {
+                var line = con.Documents.Where(x => x.NamePath.Contains(s)).Select(c=>c.NamePath).FirstOrDefault();
+                if (File.Exists(line))
+                    Process.Start(line);
+                else              
+                    MessageBox.Show("Файл не найден");
+              
+               
+                
+                
+            }
+
+
+        }
 
     }
 }

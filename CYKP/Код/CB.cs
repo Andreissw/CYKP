@@ -50,6 +50,7 @@ namespace CYKP.Код
             Clear(groupbox);
             groupbox.Visible = true;
             groupbox.Location = new Point(x, y);
+            groupbox.Size = new Size(694, 295);
         }
 
         public void CloseCombo(GroupBox GB, string name ="")
