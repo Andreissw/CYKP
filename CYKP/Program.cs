@@ -16,7 +16,7 @@ namespace CYKP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GridListDoc());
+            Application.Run(new Form1());
         }
     }
 }
