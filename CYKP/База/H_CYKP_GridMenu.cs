@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CYKP.База
+namespace CYKP
 {
     //Сущность таблицы с меню
     class H_CYKP_GridMenu
@@ -21,7 +21,12 @@ namespace CYKP.База
         [Required]
         public int MenuNameId { get; set; }
 
+       
+        public int StatusUserId { get; set; }
+
         public virtual H_CYKP_GridMenuName MenuName { get; set; }
+
+        public virtual H_CYKP_StatusUser StatusUser { get; set; }
 
     }
 }

@@ -5,30 +5,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CYKP.Код
+namespace CYKP
 {
 
-    class StartMenu: Menu
+   public class StartMenu: Menu
     {
         delegate void Method();
 
-        public StartMenu()
+        public int _RowIndex { get; set; }
+
+        public StartMenu() : base()
         {
             
-        }        
+        }
 
+        //Определение функции
         public override void RowIndex()
         {
-            var list = new List<Method> { Entry, Report,Exit};
-            list[IndexGrid]();
+            var list = new List<Method> { Entry, Report, Exit };
+            list[Form1.IndexGrid]();
         }
 
+        //Войти в учетную запись
         void Entry()
         {
-
+            var Grid = FindElement("MenuGrid");
+            Grid.Visible = false;
+            GetElement("GRlogin", 10, 10, 344, 164);
+            var TB = FindElement("TBLogin");
+            TB.Select();
         }
        
-
+        //Выход
         void Exit()
         {
             Application.Exit();

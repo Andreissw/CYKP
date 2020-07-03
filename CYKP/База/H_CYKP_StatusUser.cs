@@ -16,6 +16,7 @@ namespace CYKP
   
         public virtual ICollection<H_CYKP_Users> User { get; set; }
 
+        public virtual ICollection<H_CYKP_GridMenu> GridMenus { get; set; }
 
     }
 }

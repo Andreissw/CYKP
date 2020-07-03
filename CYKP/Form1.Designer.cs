@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TBLogin = new System.Windows.Forms.TextBox();
             this.BTlogin = new System.Windows.Forms.Button();
             this.MenuGrid = new System.Windows.Forms.DataGridView();
@@ -52,12 +52,10 @@
             this.ADDNumberContract = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.ADDStatusContract = new System.Windows.Forms.ComboBox();
+            this.StatusCBADDContract = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.ADDShrtName = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ADDDateContractEnd = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.ADDDateContract = new System.Windows.Forms.DateTimePicker();
@@ -66,7 +64,7 @@
             this.ADDFullName = new System.Windows.Forms.TextBox();
             this.ADDDateStart = new System.Windows.Forms.DateTimePicker();
             this.GRAddOrder = new System.Windows.Forms.GroupBox();
-            this.ADDprjStatus = new System.Windows.Forms.ComboBox();
+            this.StatusCBADDprj = new System.Windows.Forms.ComboBox();
             this.AddOrder = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.ADDCBClientInOrder = new System.Windows.Forms.ComboBox();
@@ -79,7 +77,7 @@
             this.ADDTBОбъемЗаказа = new System.Windows.Forms.TextBox();
             this.ADDTBNameProject = new System.Windows.Forms.TextBox();
             this.AddModule = new System.Windows.Forms.GroupBox();
-            this.ADDStatusModule = new System.Windows.Forms.ComboBox();
+            this.StatusCBADDModule = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.AddBTModule = new System.Windows.Forms.Button();
@@ -94,23 +92,23 @@
             this.ADDNameModule = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.EdditingGB = new System.Windows.Forms.GroupBox();
-            this.GRinEdditingModule = new System.Windows.Forms.GroupBox();
-            this.SerachingModule = new System.Windows.Forms.Button();
+            this.GroupEddit2 = new System.Windows.Forms.GroupBox();
+            this.Searching3 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.CBSearchModule = new System.Windows.Forms.ComboBox();
-            this.GRIDListModule = new System.Windows.Forms.DataGridView();
+            this.CBSearch3 = new System.Windows.Forms.ComboBox();
+            this.GRIDList3 = new System.Windows.Forms.DataGridView();
             this.label25 = new System.Windows.Forms.Label();
-            this.GRinEdditingOrder = new System.Windows.Forms.GroupBox();
-            this.SerachingOrder = new System.Windows.Forms.Button();
+            this.GroupEddit1 = new System.Windows.Forms.GroupBox();
+            this.Searching2 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
-            this.CBSearchOrder = new System.Windows.Forms.ComboBox();
-            this.GRIDListOrder = new System.Windows.Forms.DataGridView();
+            this.CBSearch2 = new System.Windows.Forms.ComboBox();
+            this.GRIDList2 = new System.Windows.Forms.DataGridView();
             this.label17 = new System.Windows.Forms.Label();
-            this.SerachingClient = new System.Windows.Forms.Button();
-            this.CBSearchClient = new System.Windows.Forms.ComboBox();
+            this.Searching1 = new System.Windows.Forms.Button();
+            this.CBSearch1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.GRIDListClient = new System.Windows.Forms.DataGridView();
+            this.GRIDList1 = new System.Windows.Forms.DataGridView();
             this.GROtchet = new System.Windows.Forms.GroupBox();
             this.GRINFOModule = new System.Windows.Forms.GroupBox();
             this.label38 = new System.Windows.Forms.Label();
@@ -174,11 +172,11 @@
             this.GRAddOrder.SuspendLayout();
             this.AddModule.SuspendLayout();
             this.EdditingGB.SuspendLayout();
-            this.GRinEdditingModule.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListModule)).BeginInit();
-            this.GRinEdditingOrder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListClient)).BeginInit();
+            this.GroupEddit2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList3)).BeginInit();
+            this.GroupEddit1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList1)).BeginInit();
             this.GROtchet.SuspendLayout();
             this.GRINFOModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridInfoModules)).BeginInit();
@@ -195,10 +193,11 @@
             // 
             // TBLogin
             // 
-            this.TBLogin.Location = new System.Drawing.Point(87, 40);
+            this.TBLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.TBLogin.Location = new System.Drawing.Point(114, 55);
             this.TBLogin.Name = "TBLogin";
             this.TBLogin.PasswordChar = '*';
-            this.TBLogin.Size = new System.Drawing.Size(161, 20);
+            this.TBLogin.Size = new System.Drawing.Size(224, 31);
             this.TBLogin.TabIndex = 0;
             this.TBLogin.UseSystemPasswordChar = true;
             // 
@@ -208,9 +207,10 @@
             this.BTlogin.BackColor = System.Drawing.SystemColors.Control;
             this.BTlogin.FlatAppearance.BorderSize = 0;
             this.BTlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTlogin.Location = new System.Drawing.Point(6, 37);
+            this.BTlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTlogin.Location = new System.Drawing.Point(9, 47);
             this.BTlogin.Name = "BTlogin";
-            this.BTlogin.Size = new System.Drawing.Size(75, 23);
+            this.BTlogin.Size = new System.Drawing.Size(99, 50);
             this.BTlogin.TabIndex = 1;
             this.BTlogin.Text = "Войти";
             this.BTlogin.UseVisualStyleBackColor = false;
@@ -225,8 +225,8 @@
             this.MenuGrid.Location = new System.Drawing.Point(14, 11);
             this.MenuGrid.Name = "MenuGrid";
             this.MenuGrid.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MenuGrid.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuGrid.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.MenuGrid.Size = new System.Drawing.Size(393, 292);
             this.MenuGrid.TabIndex = 2;
             // 
@@ -236,9 +236,9 @@
             this.GRlogin.Controls.Add(this.TBLogin);
             this.GRlogin.Controls.Add(this.BTback);
             this.GRlogin.Controls.Add(this.BTlogin);
-            this.GRlogin.Location = new System.Drawing.Point(5, 11);
+            this.GRlogin.Location = new System.Drawing.Point(0, 822);
             this.GRlogin.Name = "GRlogin";
-            this.GRlogin.Size = new System.Drawing.Size(261, 91);
+            this.GRlogin.Size = new System.Drawing.Size(188, 49);
             this.GRlogin.TabIndex = 3;
             this.GRlogin.TabStop = false;
             this.GRlogin.Visible = false;
@@ -246,9 +246,10 @@
             // DespLB
             // 
             this.DespLB.AutoSize = true;
+            this.DespLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DespLB.Location = new System.Drawing.Point(6, 16);
             this.DespLB.Name = "DespLB";
-            this.DespLB.Size = new System.Drawing.Size(88, 13);
+            this.DespLB.Size = new System.Drawing.Size(172, 25);
             this.DespLB.TabIndex = 2;
             this.DespLB.Text = "Введите пароль";
             // 
@@ -258,9 +259,10 @@
             this.BTback.BackColor = System.Drawing.SystemColors.Control;
             this.BTback.FlatAppearance.BorderSize = 0;
             this.BTback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTback.Location = new System.Drawing.Point(6, 62);
+            this.BTback.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTback.Location = new System.Drawing.Point(9, 103);
             this.BTback.Name = "BTback";
-            this.BTback.Size = new System.Drawing.Size(75, 23);
+            this.BTback.Size = new System.Drawing.Size(99, 49);
             this.BTback.TabIndex = 1;
             this.BTback.Text = "Назад";
             this.BTback.UseVisualStyleBackColor = false;
@@ -281,12 +283,10 @@
             this.GRAddClient.Controls.Add(this.ADDNumberContract);
             this.GRAddClient.Controls.Add(this.label6);
             this.GRAddClient.Controls.Add(this.label8);
-            this.GRAddClient.Controls.Add(this.ADDStatusContract);
+            this.GRAddClient.Controls.Add(this.StatusCBADDContract);
             this.GRAddClient.Controls.Add(this.label7);
             this.GRAddClient.Controls.Add(this.ADDShrtName);
             this.GRAddClient.Controls.Add(this.button4);
-            this.GRAddClient.Controls.Add(this.label9);
-            this.GRAddClient.Controls.Add(this.ADDDateContractEnd);
             this.GRAddClient.Controls.Add(this.label11);
             this.GRAddClient.Controls.Add(this.label12);
             this.GRAddClient.Controls.Add(this.ADDDateContract);
@@ -294,9 +294,9 @@
             this.GRAddClient.Controls.Add(this.AddClient);
             this.GRAddClient.Controls.Add(this.ADDFullName);
             this.GRAddClient.Controls.Add(this.ADDDateStart);
-            this.GRAddClient.Location = new System.Drawing.Point(415, 853);
+            this.GRAddClient.Location = new System.Drawing.Point(377, 850);
             this.GRAddClient.Name = "GRAddClient";
-            this.GRAddClient.Size = new System.Drawing.Size(131, 49);
+            this.GRAddClient.Size = new System.Drawing.Size(118, 34);
             this.GRAddClient.TabIndex = 1000;
             this.GRAddClient.TabStop = false;
             this.GRAddClient.Text = "ФормаЗаказчика";
@@ -306,7 +306,7 @@
             // 
             this.ADDNumberContract.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ADDNumberContract.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDNumberContract.Location = new System.Drawing.Point(198, 173);
+            this.ADDNumberContract.Location = new System.Drawing.Point(198, 147);
             this.ADDNumberContract.Multiline = true;
             this.ADDNumberContract.Name = "ADDNumberContract";
             this.ADDNumberContract.Size = new System.Drawing.Size(469, 20);
@@ -332,18 +332,18 @@
             this.label8.TabIndex = 1000;
             this.label8.Text = "Дата заведения";
             // 
-            // ADDStatusContract
+            // StatusCBADDContract
             // 
-            this.ADDStatusContract.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.ADDStatusContract.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ADDStatusContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ADDStatusContract.FormattingEnabled = true;
-            this.ADDStatusContract.Items.AddRange(new object[] {
+            this.StatusCBADDContract.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.StatusCBADDContract.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.StatusCBADDContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StatusCBADDContract.FormattingEnabled = true;
+            this.StatusCBADDContract.Items.AddRange(new object[] {
             " "});
-            this.ADDStatusContract.Location = new System.Drawing.Point(198, 197);
-            this.ADDStatusContract.Name = "ADDStatusContract";
-            this.ADDStatusContract.Size = new System.Drawing.Size(469, 24);
-            this.ADDStatusContract.TabIndex = 3;
+            this.StatusCBADDContract.Location = new System.Drawing.Point(198, 171);
+            this.StatusCBADDContract.Name = "StatusCBADDContract";
+            this.StatusCBADDContract.Size = new System.Drawing.Size(469, 24);
+            this.StatusCBADDContract.TabIndex = 3;
             // 
             // label7
             // 
@@ -378,24 +378,6 @@
             this.button4.TabIndex = 1000;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(6, 151);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(184, 16);
-            this.label9.TabIndex = 1000;
-            this.label9.Text = "Дата истечения договора";
-            // 
-            // ADDDateContractEnd
-            // 
-            this.ADDDateContractEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ADDDateContractEnd.Location = new System.Drawing.Point(198, 147);
-            this.ADDDateContractEnd.Name = "ADDDateContractEnd";
-            this.ADDDateContractEnd.Size = new System.Drawing.Size(469, 20);
-            this.ADDDateContractEnd.TabIndex = 6;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -410,7 +392,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(6, 178);
+            this.label12.Location = new System.Drawing.Point(6, 152);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(117, 16);
             this.label12.TabIndex = 1000;
@@ -428,7 +410,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(6, 205);
+            this.label10.Location = new System.Drawing.Point(6, 179);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 16);
             this.label10.TabIndex = 1000;
@@ -440,7 +422,7 @@
             this.AddClient.FlatAppearance.BorderSize = 0;
             this.AddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddClient.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
-            this.AddClient.Location = new System.Drawing.Point(9, 234);
+            this.AddClient.Location = new System.Drawing.Point(9, 208);
             this.AddClient.Name = "AddClient";
             this.AddClient.Size = new System.Drawing.Size(89, 33);
             this.AddClient.TabIndex = 1000;
@@ -468,7 +450,7 @@
             // GRAddOrder
             // 
             this.GRAddOrder.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.GRAddOrder.Controls.Add(this.ADDprjStatus);
+            this.GRAddOrder.Controls.Add(this.StatusCBADDprj);
             this.GRAddOrder.Controls.Add(this.AddOrder);
             this.GRAddOrder.Controls.Add(this.label13);
             this.GRAddOrder.Controls.Add(this.ADDCBClientInOrder);
@@ -480,25 +462,25 @@
             this.GRAddOrder.Controls.Add(this.button5);
             this.GRAddOrder.Controls.Add(this.ADDTBОбъемЗаказа);
             this.GRAddOrder.Controls.Add(this.ADDTBNameProject);
-            this.GRAddOrder.Location = new System.Drawing.Point(149, 853);
+            this.GRAddOrder.Location = new System.Drawing.Point(501, 853);
             this.GRAddOrder.Name = "GRAddOrder";
-            this.GRAddOrder.Size = new System.Drawing.Size(125, 35);
+            this.GRAddOrder.Size = new System.Drawing.Size(102, 27);
             this.GRAddOrder.TabIndex = 1000;
             this.GRAddOrder.TabStop = false;
             this.GRAddOrder.Text = "ФормаЗаказа";
             this.GRAddOrder.Visible = false;
             // 
-            // ADDprjStatus
+            // StatusCBADDprj
             // 
-            this.ADDprjStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.ADDprjStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ADDprjStatus.DisplayMember = "Name";
-            this.ADDprjStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.ADDprjStatus.FormattingEnabled = true;
-            this.ADDprjStatus.Location = new System.Drawing.Point(166, 152);
-            this.ADDprjStatus.Name = "ADDprjStatus";
-            this.ADDprjStatus.Size = new System.Drawing.Size(497, 24);
-            this.ADDprjStatus.TabIndex = 4;
+            this.StatusCBADDprj.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.StatusCBADDprj.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.StatusCBADDprj.DisplayMember = "Name";
+            this.StatusCBADDprj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.StatusCBADDprj.FormattingEnabled = true;
+            this.StatusCBADDprj.Location = new System.Drawing.Point(166, 152);
+            this.StatusCBADDprj.Name = "StatusCBADDprj";
+            this.StatusCBADDprj.Size = new System.Drawing.Size(497, 24);
+            this.StatusCBADDprj.TabIndex = 4;
             // 
             // AddOrder
             // 
@@ -623,7 +605,7 @@
             // AddModule
             // 
             this.AddModule.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddModule.Controls.Add(this.ADDStatusModule);
+            this.AddModule.Controls.Add(this.StatusCBADDModule);
             this.AddModule.Controls.Add(this.button1);
             this.AddModule.Controls.Add(this.label4);
             this.AddModule.Controls.Add(this.AddBTModule);
@@ -637,25 +619,25 @@
             this.AddModule.Controls.Add(this.label22);
             this.AddModule.Controls.Add(this.ADDNameModule);
             this.AddModule.Controls.Add(this.label2);
-            this.AddModule.Location = new System.Drawing.Point(280, 853);
+            this.AddModule.Location = new System.Drawing.Point(609, 853);
             this.AddModule.Name = "AddModule";
-            this.AddModule.Size = new System.Drawing.Size(129, 68);
+            this.AddModule.Size = new System.Drawing.Size(100, 31);
             this.AddModule.TabIndex = 1000;
             this.AddModule.TabStop = false;
             this.AddModule.Text = "ФормаМодуля";
             this.AddModule.Visible = false;
             // 
-            // ADDStatusModule
+            // StatusCBADDModule
             // 
-            this.ADDStatusModule.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.ADDStatusModule.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ADDStatusModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ADDStatusModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.ADDStatusModule.FormattingEnabled = true;
-            this.ADDStatusModule.Location = new System.Drawing.Point(181, 178);
-            this.ADDStatusModule.Name = "ADDStatusModule";
-            this.ADDStatusModule.Size = new System.Drawing.Size(458, 24);
-            this.ADDStatusModule.TabIndex = 5;
+            this.StatusCBADDModule.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.StatusCBADDModule.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.StatusCBADDModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatusCBADDModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.StatusCBADDModule.FormattingEnabled = true;
+            this.StatusCBADDModule.Location = new System.Drawing.Point(181, 178);
+            this.StatusCBADDModule.Name = "StatusCBADDModule";
+            this.StatusCBADDModule.Size = new System.Drawing.Size(458, 24);
+            this.StatusCBADDModule.TabIndex = 5;
             // 
             // button1
             // 
@@ -805,46 +787,46 @@
             // EdditingGB
             // 
             this.EdditingGB.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.EdditingGB.Controls.Add(this.GRinEdditingModule);
-            this.EdditingGB.Controls.Add(this.GRinEdditingOrder);
-            this.EdditingGB.Controls.Add(this.SerachingClient);
-            this.EdditingGB.Controls.Add(this.CBSearchClient);
+            this.EdditingGB.Controls.Add(this.GroupEddit2);
+            this.EdditingGB.Controls.Add(this.GroupEddit1);
+            this.EdditingGB.Controls.Add(this.Searching1);
+            this.EdditingGB.Controls.Add(this.CBSearch1);
             this.EdditingGB.Controls.Add(this.label16);
             this.EdditingGB.Controls.Add(this.label1);
-            this.EdditingGB.Controls.Add(this.GRIDListClient);
-            this.EdditingGB.Location = new System.Drawing.Point(1788, 17);
+            this.EdditingGB.Controls.Add(this.GRIDList1);
+            this.EdditingGB.Location = new System.Drawing.Point(486, 54);
             this.EdditingGB.Name = "EdditingGB";
-            this.EdditingGB.Size = new System.Drawing.Size(1059, 489);
+            this.EdditingGB.Size = new System.Drawing.Size(1040, 465);
             this.EdditingGB.TabIndex = 8;
             this.EdditingGB.TabStop = false;
             this.EdditingGB.Text = "ФормаРедактирования";
             this.EdditingGB.Visible = false;
             // 
-            // GRinEdditingModule
+            // GroupEddit2
             // 
-            this.GRinEdditingModule.Controls.Add(this.SerachingModule);
-            this.GRinEdditingModule.Controls.Add(this.label24);
-            this.GRinEdditingModule.Controls.Add(this.CBSearchModule);
-            this.GRinEdditingModule.Controls.Add(this.GRIDListModule);
-            this.GRinEdditingModule.Controls.Add(this.label25);
-            this.GRinEdditingModule.Location = new System.Drawing.Point(699, 9);
-            this.GRinEdditingModule.Name = "GRinEdditingModule";
-            this.GRinEdditingModule.Size = new System.Drawing.Size(350, 464);
-            this.GRinEdditingModule.TabIndex = 13;
-            this.GRinEdditingModule.TabStop = false;
-            this.GRinEdditingModule.Visible = false;
+            this.GroupEddit2.Controls.Add(this.Searching3);
+            this.GroupEddit2.Controls.Add(this.label24);
+            this.GroupEddit2.Controls.Add(this.CBSearch3);
+            this.GroupEddit2.Controls.Add(this.GRIDList3);
+            this.GroupEddit2.Controls.Add(this.label25);
+            this.GroupEddit2.Location = new System.Drawing.Point(684, 9);
+            this.GroupEddit2.Name = "GroupEddit2";
+            this.GroupEddit2.Size = new System.Drawing.Size(350, 464);
+            this.GroupEddit2.TabIndex = 13;
+            this.GroupEddit2.TabStop = false;
+            this.GroupEddit2.Visible = false;
             // 
-            // SerachingModule
+            // Searching3
             // 
-            this.SerachingModule.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SerachingModule.FlatAppearance.BorderSize = 0;
-            this.SerachingModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SerachingModule.Location = new System.Drawing.Point(270, 15);
-            this.SerachingModule.Name = "SerachingModule";
-            this.SerachingModule.Size = new System.Drawing.Size(60, 23);
-            this.SerachingModule.TabIndex = 15;
-            this.SerachingModule.Text = "OK";
-            this.SerachingModule.UseVisualStyleBackColor = false;
+            this.Searching3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Searching3.FlatAppearance.BorderSize = 0;
+            this.Searching3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searching3.Location = new System.Drawing.Point(270, 15);
+            this.Searching3.Name = "Searching3";
+            this.Searching3.Size = new System.Drawing.Size(60, 23);
+            this.Searching3.TabIndex = 15;
+            this.Searching3.Text = "OK";
+            this.Searching3.UseVisualStyleBackColor = false;
             // 
             // label24
             // 
@@ -856,34 +838,34 @@
             this.label24.TabIndex = 13;
             this.label24.Text = "Поиск";
             // 
-            // CBSearchModule
+            // CBSearch3
             // 
-            this.CBSearchModule.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CBSearchModule.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CBSearchModule.BackColor = System.Drawing.Color.White;
-            this.CBSearchModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CBSearchModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CBSearchModule.FormattingEnabled = true;
-            this.CBSearchModule.Items.AddRange(new object[] {
+            this.CBSearch3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBSearch3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBSearch3.BackColor = System.Drawing.Color.White;
+            this.CBSearch3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBSearch3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBSearch3.FormattingEnabled = true;
+            this.CBSearch3.Items.AddRange(new object[] {
             " "});
-            this.CBSearchModule.Location = new System.Drawing.Point(61, 15);
-            this.CBSearchModule.Name = "CBSearchModule";
-            this.CBSearchModule.Size = new System.Drawing.Size(203, 23);
-            this.CBSearchModule.TabIndex = 14;
+            this.CBSearch3.Location = new System.Drawing.Point(61, 15);
+            this.CBSearch3.Name = "CBSearch3";
+            this.CBSearch3.Size = new System.Drawing.Size(203, 23);
+            this.CBSearch3.TabIndex = 14;
             // 
-            // GRIDListModule
+            // GRIDList3
             // 
-            this.GRIDListModule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GRIDListModule.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.GRIDListModule.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GRIDListModule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDListModule.Location = new System.Drawing.Point(9, 63);
-            this.GRIDListModule.Name = "GRIDListModule";
-            this.GRIDListModule.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListModule.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.GRIDListModule.Size = new System.Drawing.Size(325, 386);
-            this.GRIDListModule.TabIndex = 3;
+            this.GRIDList3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GRIDList3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GRIDList3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GRIDList3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GRIDList3.Location = new System.Drawing.Point(9, 63);
+            this.GRIDList3.Name = "GRIDList3";
+            this.GRIDList3.RowHeadersVisible = false;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDList3.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.GRIDList3.Size = new System.Drawing.Size(325, 386);
+            this.GRIDList3.TabIndex = 3;
             // 
             // label25
             // 
@@ -895,31 +877,31 @@
             this.label25.TabIndex = 10;
             this.label25.Text = "СписокМодулей";
             // 
-            // GRinEdditingOrder
+            // GroupEddit1
             // 
-            this.GRinEdditingOrder.Controls.Add(this.SerachingOrder);
-            this.GRinEdditingOrder.Controls.Add(this.label23);
-            this.GRinEdditingOrder.Controls.Add(this.CBSearchOrder);
-            this.GRinEdditingOrder.Controls.Add(this.GRIDListOrder);
-            this.GRinEdditingOrder.Controls.Add(this.label17);
-            this.GRinEdditingOrder.Location = new System.Drawing.Point(343, 9);
-            this.GRinEdditingOrder.Name = "GRinEdditingOrder";
-            this.GRinEdditingOrder.Size = new System.Drawing.Size(350, 464);
-            this.GRinEdditingOrder.TabIndex = 10;
-            this.GRinEdditingOrder.TabStop = false;
-            this.GRinEdditingOrder.Visible = false;
+            this.GroupEddit1.Controls.Add(this.Searching2);
+            this.GroupEddit1.Controls.Add(this.label23);
+            this.GroupEddit1.Controls.Add(this.CBSearch2);
+            this.GroupEddit1.Controls.Add(this.GRIDList2);
+            this.GroupEddit1.Controls.Add(this.label17);
+            this.GroupEddit1.Location = new System.Drawing.Point(343, 9);
+            this.GroupEddit1.Name = "GroupEddit1";
+            this.GroupEddit1.Size = new System.Drawing.Size(338, 464);
+            this.GroupEddit1.TabIndex = 10;
+            this.GroupEddit1.TabStop = false;
+            this.GroupEddit1.Visible = false;
             // 
-            // SerachingOrder
+            // Searching2
             // 
-            this.SerachingOrder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SerachingOrder.FlatAppearance.BorderSize = 0;
-            this.SerachingOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SerachingOrder.Location = new System.Drawing.Point(270, 15);
-            this.SerachingOrder.Name = "SerachingOrder";
-            this.SerachingOrder.Size = new System.Drawing.Size(60, 23);
-            this.SerachingOrder.TabIndex = 15;
-            this.SerachingOrder.Text = "OK";
-            this.SerachingOrder.UseVisualStyleBackColor = false;
+            this.Searching2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Searching2.FlatAppearance.BorderSize = 0;
+            this.Searching2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searching2.Location = new System.Drawing.Point(270, 15);
+            this.Searching2.Name = "Searching2";
+            this.Searching2.Size = new System.Drawing.Size(60, 23);
+            this.Searching2.TabIndex = 15;
+            this.Searching2.Text = "OK";
+            this.Searching2.UseVisualStyleBackColor = false;
             // 
             // label23
             // 
@@ -931,34 +913,34 @@
             this.label23.TabIndex = 13;
             this.label23.Text = "Поиск";
             // 
-            // CBSearchOrder
+            // CBSearch2
             // 
-            this.CBSearchOrder.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CBSearchOrder.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CBSearchOrder.BackColor = System.Drawing.Color.White;
-            this.CBSearchOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CBSearchOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CBSearchOrder.FormattingEnabled = true;
-            this.CBSearchOrder.Items.AddRange(new object[] {
+            this.CBSearch2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBSearch2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBSearch2.BackColor = System.Drawing.Color.White;
+            this.CBSearch2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBSearch2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBSearch2.FormattingEnabled = true;
+            this.CBSearch2.Items.AddRange(new object[] {
             " "});
-            this.CBSearchOrder.Location = new System.Drawing.Point(61, 15);
-            this.CBSearchOrder.Name = "CBSearchOrder";
-            this.CBSearchOrder.Size = new System.Drawing.Size(203, 23);
-            this.CBSearchOrder.TabIndex = 14;
+            this.CBSearch2.Location = new System.Drawing.Point(61, 15);
+            this.CBSearch2.Name = "CBSearch2";
+            this.CBSearch2.Size = new System.Drawing.Size(203, 23);
+            this.CBSearch2.TabIndex = 14;
             // 
-            // GRIDListOrder
+            // GRIDList2
             // 
-            this.GRIDListOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GRIDListOrder.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.GRIDListOrder.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GRIDListOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDListOrder.Location = new System.Drawing.Point(9, 63);
-            this.GRIDListOrder.Name = "GRIDListOrder";
-            this.GRIDListOrder.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListOrder.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.GRIDListOrder.Size = new System.Drawing.Size(325, 386);
-            this.GRIDListOrder.TabIndex = 3;
+            this.GRIDList2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GRIDList2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GRIDList2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GRIDList2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GRIDList2.Location = new System.Drawing.Point(9, 63);
+            this.GRIDList2.Name = "GRIDList2";
+            this.GRIDList2.RowHeadersVisible = false;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDList2.RowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.GRIDList2.Size = new System.Drawing.Size(325, 386);
+            this.GRIDList2.TabIndex = 3;
             // 
             // label17
             // 
@@ -970,32 +952,32 @@
             this.label17.TabIndex = 10;
             this.label17.Text = "СписокЗаказов";
             // 
-            // SerachingClient
+            // Searching1
             // 
-            this.SerachingClient.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SerachingClient.FlatAppearance.BorderSize = 0;
-            this.SerachingClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SerachingClient.Location = new System.Drawing.Point(264, 24);
-            this.SerachingClient.Name = "SerachingClient";
-            this.SerachingClient.Size = new System.Drawing.Size(60, 23);
-            this.SerachingClient.TabIndex = 12;
-            this.SerachingClient.Text = "OK";
-            this.SerachingClient.UseVisualStyleBackColor = false;
+            this.Searching1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Searching1.FlatAppearance.BorderSize = 0;
+            this.Searching1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Searching1.Location = new System.Drawing.Point(264, 24);
+            this.Searching1.Name = "Searching1";
+            this.Searching1.Size = new System.Drawing.Size(60, 23);
+            this.Searching1.TabIndex = 12;
+            this.Searching1.Text = "OK";
+            this.Searching1.UseVisualStyleBackColor = false;
             // 
-            // CBSearchClient
+            // CBSearch1
             // 
-            this.CBSearchClient.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CBSearchClient.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CBSearchClient.BackColor = System.Drawing.Color.White;
-            this.CBSearchClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CBSearchClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CBSearchClient.FormattingEnabled = true;
-            this.CBSearchClient.Items.AddRange(new object[] {
+            this.CBSearch1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CBSearch1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBSearch1.BackColor = System.Drawing.Color.White;
+            this.CBSearch1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CBSearch1.FormattingEnabled = true;
+            this.CBSearch1.Items.AddRange(new object[] {
             " "});
-            this.CBSearchClient.Location = new System.Drawing.Point(63, 24);
-            this.CBSearchClient.Name = "CBSearchClient";
-            this.CBSearchClient.Size = new System.Drawing.Size(195, 23);
-            this.CBSearchClient.TabIndex = 11;
+            this.CBSearch1.Location = new System.Drawing.Point(63, 24);
+            this.CBSearch1.Name = "CBSearch1";
+            this.CBSearch1.Size = new System.Drawing.Size(195, 23);
+            this.CBSearch1.TabIndex = 11;
             // 
             // label16
             // 
@@ -1017,19 +999,19 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Поиск";
             // 
-            // GRIDListClient
+            // GRIDList1
             // 
-            this.GRIDListClient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GRIDListClient.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.GRIDListClient.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GRIDListClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDListClient.Location = new System.Drawing.Point(6, 72);
-            this.GRIDListClient.Name = "GRIDListClient";
-            this.GRIDListClient.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GRIDListClient.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.GRIDListClient.Size = new System.Drawing.Size(330, 386);
-            this.GRIDListClient.TabIndex = 3;
+            this.GRIDList1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GRIDList1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GRIDList1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GRIDList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GRIDList1.Location = new System.Drawing.Point(6, 72);
+            this.GRIDList1.Name = "GRIDList1";
+            this.GRIDList1.RowHeadersVisible = false;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GRIDList1.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.GRIDList1.Size = new System.Drawing.Size(330, 386);
+            this.GRIDList1.TabIndex = 3;
             // 
             // GROtchet
             // 
@@ -1041,9 +1023,9 @@
             this.GROtchet.Controls.Add(this.INFBT);
             this.GROtchet.Controls.Add(this.CBFindName);
             this.GROtchet.Controls.Add(this.label18);
-            this.GROtchet.Location = new System.Drawing.Point(1553, 25);
+            this.GROtchet.Location = new System.Drawing.Point(1491, 12);
             this.GROtchet.Name = "GROtchet";
-            this.GROtchet.Size = new System.Drawing.Size(76, 31);
+            this.GROtchet.Size = new System.Drawing.Size(55, 28);
             this.GROtchet.TabIndex = 9;
             this.GROtchet.TabStop = false;
             this.GROtchet.Text = "Отчет";
@@ -1089,26 +1071,26 @@
             this.GridInfoModules.ColumnHeadersVisible = false;
             this.GridInfoModules.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoModules.DefaultCellStyle = dataGridViewCellStyle18;
             this.GridInfoModules.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoModules.Location = new System.Drawing.Point(125, 31);
             this.GridInfoModules.Name = "GridInfoModules";
             this.GridInfoModules.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoModules.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.GridInfoModules.RowHeadersVisible = false;
             this.GridInfoModules.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoModules.RowTemplate.Height = 10;
@@ -1228,26 +1210,26 @@
             this.GridInfoOrders.ColumnHeadersVisible = false;
             this.GridInfoOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoOrders.DefaultCellStyle = dataGridViewCellStyle20;
             this.GridInfoOrders.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoOrders.Location = new System.Drawing.Point(176, 38);
             this.GridInfoOrders.Name = "GridInfoOrders";
             this.GridInfoOrders.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.GridInfoOrders.RowHeadersVisible = false;
             this.GridInfoOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoOrders.RowTemplate.Height = 10;
@@ -1294,8 +1276,8 @@
             this.INFGridModules.Location = new System.Drawing.Point(537, 38);
             this.INFGridModules.Name = "INFGridModules";
             this.INFGridModules.RowHeadersVisible = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridModules.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.INFGridModules.Size = new System.Drawing.Size(270, 290);
             this.INFGridModules.TabIndex = 16;
             // 
@@ -1407,26 +1389,26 @@
             this.GridInfoClients.ColumnHeadersVisible = false;
             this.GridInfoClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridInfoClients.DefaultCellStyle = dataGridViewCellStyle23;
             this.GridInfoClients.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.GridInfoClients.Location = new System.Drawing.Point(176, 38);
             this.GridInfoClients.Name = "GridInfoClients";
             this.GridInfoClients.ReadOnly = true;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridInfoClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.GridInfoClients.RowHeadersVisible = false;
             this.GridInfoClients.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.GridInfoClients.RowTemplate.Height = 10;
@@ -1473,8 +1455,8 @@
             this.INFGridOrders.Location = new System.Drawing.Point(537, 38);
             this.INFGridOrders.Name = "INFGridOrders";
             this.INFGridOrders.RowHeadersVisible = false;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.INFGridOrders.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.INFGridOrders.Size = new System.Drawing.Size(270, 290);
             this.INFGridOrders.TabIndex = 16;
             // 
@@ -1636,9 +1618,9 @@
             this.GBDoc.Controls.Add(this.BTok);
             this.GBDoc.Controls.Add(this.CBFiDoc);
             this.GBDoc.Controls.Add(this.label50);
-            this.GBDoc.Location = new System.Drawing.Point(1699, 17);
+            this.GBDoc.Location = new System.Drawing.Point(728, 853);
             this.GBDoc.Name = "GBDoc";
-            this.GBDoc.Size = new System.Drawing.Size(83, 29);
+            this.GBDoc.Size = new System.Drawing.Size(115, 39);
             this.GBDoc.TabIndex = 1002;
             this.GBDoc.TabStop = false;
             this.GBDoc.Text = "Документы";
@@ -1695,8 +1677,8 @@
             this.GridDocument.Location = new System.Drawing.Point(6, 60);
             this.GridDocument.Name = "GridDocument";
             this.GridDocument.RowHeadersVisible = false;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GridDocument.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GridDocument.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.GridDocument.Size = new System.Drawing.Size(589, 367);
             this.GridDocument.TabIndex = 24;
             // 
@@ -1814,7 +1796,6 @@
             this.Name = "Form1";
             this.Text = "CYKP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MenuGrid)).EndInit();
             this.GRlogin.ResumeLayout(false);
             this.GRlogin.PerformLayout();
@@ -1826,13 +1807,13 @@
             this.AddModule.PerformLayout();
             this.EdditingGB.ResumeLayout(false);
             this.EdditingGB.PerformLayout();
-            this.GRinEdditingModule.ResumeLayout(false);
-            this.GRinEdditingModule.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListModule)).EndInit();
-            this.GRinEdditingOrder.ResumeLayout(false);
-            this.GRinEdditingOrder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GRIDListClient)).EndInit();
+            this.GroupEddit2.ResumeLayout(false);
+            this.GroupEddit2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList3)).EndInit();
+            this.GroupEddit1.ResumeLayout(false);
+            this.GroupEddit1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRIDList1)).EndInit();
             this.GROtchet.ResumeLayout(false);
             this.GROtchet.PerformLayout();
             this.GRINFOModule.ResumeLayout(false);
@@ -1870,9 +1851,7 @@
         private System.Windows.Forms.Button AddClient;
         private System.Windows.Forms.DateTimePicker ADDDateContract;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox ADDStatusContract;
-        private System.Windows.Forms.DateTimePicker ADDDateContractEnd;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox StatusCBADDContract;
         private System.Windows.Forms.DateTimePicker ADDDateStart;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox ADDNumberContract;
@@ -1885,7 +1864,7 @@
         private System.Windows.Forms.GroupBox GRAddOrder;
         private System.Windows.Forms.ComboBox ADDCBClientInOrder;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox ADDprjStatus;
+        private System.Windows.Forms.ComboBox StatusCBADDprj;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker ADDDateProject;
         private System.Windows.Forms.Label label14;
@@ -1895,7 +1874,7 @@
         private System.Windows.Forms.Button AddOrder;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox AddModule;
-        private System.Windows.Forms.ComboBox ADDStatusModule;
+        private System.Windows.Forms.ComboBox StatusCBADDModule;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker ADDDateCreate;
         private System.Windows.Forms.Label label5;
@@ -1910,22 +1889,22 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button AddBTModule;
         private System.Windows.Forms.GroupBox EdditingGB;
-        private System.Windows.Forms.Button SerachingClient;
-        private System.Windows.Forms.ComboBox CBSearchClient;
+        private System.Windows.Forms.Button Searching1;
+        private System.Windows.Forms.ComboBox CBSearch1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView GRIDListClient;
+        private System.Windows.Forms.DataGridView GRIDList1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DataGridView GRIDListOrder;
-        private System.Windows.Forms.GroupBox GRinEdditingOrder;
-        private System.Windows.Forms.Button SerachingOrder;
+        private System.Windows.Forms.DataGridView GRIDList2;
+        private System.Windows.Forms.GroupBox GroupEddit1;
+        private System.Windows.Forms.Button Searching2;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox CBSearchOrder;
-        private System.Windows.Forms.GroupBox GRinEdditingModule;
-        private System.Windows.Forms.Button SerachingModule;
+        private System.Windows.Forms.ComboBox CBSearch2;
+        private System.Windows.Forms.GroupBox GroupEddit2;
+        private System.Windows.Forms.Button Searching3;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox CBSearchModule;
-        private System.Windows.Forms.DataGridView GRIDListModule;
+        private System.Windows.Forms.ComboBox CBSearch3;
+        private System.Windows.Forms.DataGridView GRIDList3;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox ADDTBNameProject;
         private System.Windows.Forms.GroupBox GROtchet;

@@ -182,6 +182,10 @@
     <Compile Include="Migrations\202006180744548_CYKP20.designer.cs">
       <DependentUpon>202006180744548_CYKP20.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006301144302_CYKP21.cs" />
+    <Compile Include="Migrations\202006301144302_CYKP21.designer.cs">
+      <DependentUpon>202006301144302_CYKP21.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="База\H_CYKP_DateTypes.cs" />
     <Compile Include="База\H_CYKP_Document.cs" />
@@ -270,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006180744548_CYKP20.resx">
       <DependentUpon>202006180744548_CYKP20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006301144302_CYKP21.resx">
+      <DependentUpon>202006301144302_CYKP21.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
